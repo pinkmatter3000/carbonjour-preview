@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{title}}</title>
+<meta name="description" content="{{desc}}">
+<meta property="og:title" content="{{title}}">
+<meta property="og:image" content="img/{{ogImage}}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230C1D24'/%3E%3Cpath d='M5 19c3-3 5-3 8 0s5 3 8 0 5-3 6-1' stroke='%237FD3C4' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='10' r='3' fill='%23F5F7F6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="{{page}}">
+<a class="skip" href="#main" data-i18n="skip">跳到正文</a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand" data-i18n-attr="aria-label:brandHome" aria-label="海浦麒 Carbonjour 首页">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="currentColor"/><path d="M6 21c3.2-3.2 5.4-3.2 8.6 0s5.4 3.2 8.6 0 4.6-3 5.8-1.2" stroke="#127A70" stroke-width="2.6" fill="none" stroke-linecap="round"/><circle cx="17" cy="11" r="3.2" fill="#7FD3C4"/></svg>
+      <span class="brand-name"><strong data-i18n="brandName">海浦麒</strong><span data-i18n="brandSub">Carbonjour</span></span>
+    </a>
+    <nav data-i18n-attr="aria-label:navLabel" aria-label="主导航">
+      <ul class="menu" id="menu">
+        <li><a href="technology.html" data-nav="technology" data-i18n="navTech">技术</a></li>
+        <li><a href="solutions.html" data-nav="solutions" data-i18n="navSol">解决方案</a></li>
+        <li><a href="partnership.html" data-nav="partnership" data-i18n="navPart">合作模式</a></li>
+        <li><a href="about.html" data-nav="about" data-i18n="navAbout">关于我们</a></li>
+        <li><a href="news.html" data-nav="news" data-i18n="navNews">动态</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language / 语言">
+        <button type="button" data-lang="zh" aria-pressed="true" lang="zh-CN"><span>中</span></button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en"><span>EN</span></button>
+      </div>
+      <a href="contact.html" class="btn nav-cta"><span data-i18n="ctaBook">预约技术交流</span> <span class="arr">→</span></a>
+      <button class="burger" id="burger" data-i18n-attr="aria-label:menuOpen" aria-label="打开菜单" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+{{body}}
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="index.html" class="brand">
+        <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#E8F0EE"/><path d="M6 21c3.2-3.2 5.4-3.2 8.6 0s5.4 3.2 8.6 0 4.6-3 5.8-1.2" stroke="#127A70" stroke-width="2.6" fill="none" stroke-linecap="round"/><circle cx="17" cy="11" r="3.2" fill="#7FD3C4"/></svg>
+        <span class="brand-name"><strong data-i18n="brandName">海浦麒</strong><span data-i18n="footTag">Carbonjour — Ocean heals climate</span></span>
+      </a>
+      <nav class="foot-links" data-i18n-attr="aria-label:footNav" aria-label="页脚导航">
+        <a href="technology.html" data-i18n="navTech">技术</a><a href="solutions.html" data-i18n="navSol">解决方案</a><a href="partnership.html" data-i18n="navPart">合作模式</a><a href="about.html" data-i18n="navAbout">关于我们</a><a href="news.html" data-i18n="navNews">动态</a><a href="contact.html" data-i18n="ctEye">联系我们</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="copy">© 2026 上海海浦麒碳科技有限公司</span>
+      <span class="foot-links"><a href="contact.html" data-i18n="privacy">隐私政策</a><a href="contact.html" data-i18n="terms">使用条款</a><a class="powered" href="https://hypha.co.nz/" target="_blank" rel="noopener">Powered by Hypha</a></span>
+    </div>
+    <p class="credits" data-i18n="credits">部分图片由 Captura 提供；其余图片来自 Pexels，遵循 Pexels 许可免费使用。</p>
+  </div>
+</footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>技术原理 · 海浦麒 Carbonjour</title>
+<meta name="description" content="Captura 直接海洋捕集（DOC）的工作原理、双极膜电渗析产品参数、海洋健康与 MRV 监测，以及从 1 吨到 1,000 吨的验证历程。">
+<meta property="og:title" content="技术原理 · 海浦麒 Carbonjour">
+<meta property="og:image" content="img/hawaii-plant.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230C1D24'/%3E%3Cpath d='M5 19c3-3 5-3 8 0s5 3 8 0 5-3 6-1' stroke='%237FD3C4' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='10' r='3' fill='%23F5F7F6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="technology">
+<a class="skip" href="#main" data-i18n="skip">跳到正文</a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand" data-i18n-attr="aria-label:brandHome" aria-label="海浦麒 Carbonjour 首页">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="currentColor"/><path d="M6 21c3.2-3.2 5.4-3.2 8.6 0s5.4 3.2 8.6 0 4.6-3 5.8-1.2" stroke="#127A70" stroke-width="2.6" fill="none" stroke-linecap="round"/><circle cx="17" cy="11" r="3.2" fill="#7FD3C4"/></svg>
+      <span class="brand-name"><strong data-i18n="brandName">海浦麒</strong><span data-i18n="brandSub">Carbonjour</span></span>
+    </a>
+    <nav data-i18n-attr="aria-label:navLabel" aria-label="主导航">
+      <ul class="menu" id="menu">
+        <li><a href="technology.html" data-nav="technology" class="active" aria-current="page" data-i18n="navTech">技术</a></li>
+        <li><a href="solutions.html" data-nav="solutions" data-i18n="navSol">解决方案</a></li>
+        <li><a href="partnership.html" data-nav="partnership" data-i18n="navPart">合作模式</a></li>
+        <li><a href="about.html" data-nav="about" data-i18n="navAbout">关于我们</a></li>
+        <li><a href="news.html" data-nav="news" data-i18n="navNews">动态</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language / 语言">
+        <button type="button" data-lang="zh" aria-pressed="true" lang="zh-CN"><span>中</span></button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en"><span>EN</span></button>
+      </div>
+      <a href="contact.html" class="btn nav-cta"><span data-i18n="ctaBook">预约技术交流</span> <span class="arr">→</span></a>
+      <button class="burger" id="burger" data-i18n-attr="aria-label:menuOpen" aria-label="打开菜单" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero page-hero" id="top">
+  <div class="hero-bg"><img src="img/hawaii-plant.jpg" alt="" fetchpriority="high"></div>
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="index.html" data-i18n="crumbHome">首页</a><span>/</span><span data-i18n="navTech">技术</span></nav>
+    <span class="label"><span data-i18n="tPhEye">技术原理</span><span class="en">Technology</span></span>
+    <h1 data-i18n="tPhH">只用海水和绿电，<br>把碳从大气里取出来</h1>
+    <p class="lead" data-i18n="tPhP">核心是 Captura 在加州理工研发的双极膜电渗析平台。它驱动直接海洋捕集，也作为独立产品服务提锂、水处理与储能。</p>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="how sec" aria-labelledby="how-t">
+  <div class="wrap how-grid">
+    <figure class="photo how-photo"><span class="pill"><span>1,000 t/yr pilot</span><i>↗</i></span><img src="img/hawaii-tanks.jpg" alt="试点工厂的预处理罐组与管线" data-i18n-attr="alt:altTanks" loading="lazy"><figcaption class="credit">Photo: Captura</figcaption></figure>
+    <div>
+      <span class="label"><span data-i18n="howEye">技术原理</span><span class="en">Direct Ocean Capture</span></span>
+      <h2 id="how-t" data-i18n="howH">四步，把空气里的碳<br>交给海洋，再取出来</h2>
+      <p class="lead" style="margin-top:18px" data-i18n="howLead">系统只需要两种输入：海水与可再生电力。不向海洋添加任何物质，没有副产物，也不占用淡水。</p>
+      <ol class="steps">
+        <li class="step"><span class="k">01</span><div><h3 data-i18n="s1h">取少量海水</h3><p data-i18n="s1p">抽取一小部分海水并预处理，可直接复用电厂、淡化厂已有的取水设施。</p></div></li>
+        <li class="step"><span class="k">02</span><div><h3 data-i18n="s2h">电渗析制酸碱</h3><p data-i18n="s2p">可再生电力驱动双极膜电堆，把海水中的盐分离为酸液和碱液。</p></div></li>
+        <li class="step"><span class="k">03</span><div><h3 data-i18n="s3h">释放并收集 CO₂</h3><p data-i18n="s3p">酸液让溶解无机碳转化为 CO₂ 气体，分离出高纯度、可计量的 CO₂ 气流。</p></div></li>
+        <li class="step"><span class="k">04</span><div><h3 data-i18n="s4h">海水回流，再吸碳</h3><p data-i18n="s4p">碱液恢复 pH 后海水回到海洋，并从大气中重新吸收等量的 CO₂。</p></div></li>
+      </ol>
+      <div class="outs"><span data-i18n="out1"><b>封存</b>与地质封存服务商合作，锁存数千年</span><span data-i18n="out2"><b>利用</b>合成燃料、化学品、建材</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ELECTRODIALYSIS -->
+<section class="sec" id="ed" aria-labelledby="ed-t">
+  <div class="wrap split">
+    <figure class="photo"><img src="img/membrane.jpg" alt="Captura 自研双极膜卷材特写" data-i18n-attr="alt:altMembrane" loading="lazy"><span class="pill"><span>Pasadena, CA</span><i>↗</i></span><figcaption class="credit">Photo: Captura</figcaption></figure>
+    <div>
+      <span class="label"><span data-i18n="edEye">双极膜电渗析</span><span class="en">Bipolar membrane electrodialysis</span></span>
+      <h2 id="ed-t" data-i18n="edH">同一块膜，不止于碳移除</h2>
+      <p data-i18n="edP1">电渗析用离子交换膜和电流，直接从盐溶液中制取酸和碱，可处理多种进水和工业废液。Captura 在加州帕萨迪纳的工厂以卷对卷工艺量产双极膜，并组装电堆。</p>
+      <div class="facts">
+        <div><strong>10×</strong><span data-i18n="edF1">性能最高可达主流方案的 10 倍，能耗与投资更低</span></div>
+        <div><strong>&lt; 10 µV/h</strong><span data-i18n="edF2">实测电压衰减率，支持多年膜寿命目标</span></div>
+        <div><strong>PFAS-free</strong><span data-i18n="edF3">膜材料不含全氟化合物</span></div>
+        <div><strong>BPM · CEM</strong><span data-i18n="edF4">双极膜、阳离子交换膜、电堆与交钥匙系统</span></div>
+      </div>
+      <div class="chips" style="margin-top:24px"><span data-i18n="p2c1">直接提锂</span><span data-i18n="p2c2">浓盐水资源化</span><span data-i18n="edC3">工业废水资源化</span><span data-i18n="p2c3">长时储能</span><span data-i18n="p2c4">电化学碳捕集</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- OCEAN HEALTH / MRV -->
+<section class="sec" aria-labelledby="mrv-t" style="padding-top:0">
+  <div class="wrap split">
+    <div>
+      <span class="label"><span data-i18n="mrvEye">海洋健康与 MRV</span><span class="en">Ocean health &amp; MRV</span></span>
+      <h2 id="mrv-t" data-i18n="mrvH">每一吨都可测量、可核证</h2>
+      <p data-i18n="mrvP1">MRV 指监测（Monitoring）、报告（Reporting）与核证（Verification），决定碳移除量是否可信，也决定碳信用的价值。</p>
+      <p data-i18n="mrvP2">Captura 的海洋学团队持续监测工艺与海洋生态的相互作用，联合外部专家开展环境监测、海洋模拟与生物影响研究，并与独立登记机构 Isometric 合作完善直接海洋捕集的方法学。研究成果计划发表在开放获取的同行评审期刊上。</p>
+      <div class="facts">
+        <div><strong>0</strong><span data-i18n="mrvF1">不向海洋添加任何物质，不留化学残留</span></div>
+        <div><strong>Isometric</strong><span data-i18n="mrvF2">独立碳移除登记机构，参与方法学开发</span></div>
+      </div>
+    </div>
+    <figure class="photo"><img src="img/turtle.webp" alt="海龟在海水中游动" data-i18n-attr="alt:altTurtle" loading="lazy"><figcaption class="credit">Photo: Captura</figcaption></figure>
+  </div>
+</section>
+
+<!-- MILESTONES -->
+<section class="ms sec" id="milestones" aria-labelledby="ms-t">
+  <div class="wrap">
+    <span class="label"><span data-i18n="msEye">发展历程</span><span class="en">Scaled 1,000× in three years</span></span>
+    <h2 id="ms-t" data-i18n="msH">从实验室到海边，再到中国</h2>
+    <ol class="ms-list">
+      <li class="ms-item"><figure class="photo"><img src="img/caltech.webp" alt="" loading="lazy"></figure><span class="yr">2022</span><strong data-i18n="ms1s">1 吨/年</strong><p data-i18n="ms1p">第一代系统，加州理工 Kerckhoff 海洋实验室</p></li>
+      <li class="ms-item"><figure class="photo"><img src="img/pilot-pier.webp" alt="" loading="lazy"></figure><span class="yr">2023</span><strong data-i18n="ms2s">100 吨/年</strong><p data-i18n="ms2p">第二代系统，洛杉矶港 AltaSea 海洋研究基地</p></li>
+      <li class="ms-item"><figure class="photo"><img src="img/barge-aerial.webp" alt="" loading="lazy"></figure><span class="yr">2025</span><strong data-i18n="ms3s">1,000 吨/年</strong><p data-i18n="ms3p">第三代试点，夏威夷海洋科技园，与 Equinor 合作</p></li>
+      <li class="ms-item next"><figure class="photo"><img src="img/coastal-plant.jpg" alt="" loading="lazy"></figure><span class="yr" data-i18n="ms4y">进行中</span><strong data-i18n="ms4s">中国落地</strong><p data-i18n="ms4p">海浦麒推进长三角 DOC 中试，探索与海上风电、海洋牧场耦合</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band" aria-labelledby="cta-t">
+  <img src="img/sea-texture.jpg" alt="" loading="lazy">
+  <div class="wrap">
+    <div>
+      <span class="label"><span data-i18n="ctaEye">下一步</span><span class="en">Next step</span></span>
+      <h2 id="cta-t" data-i18n="ctaH">聊聊你的减碳场景</h2>
+      <p data-i18n="ctaP">告诉我们你的行业、设施和目标，技术团队会在 2 个工作日内回复。</p>
+    </div>
+    <a href="contact.html" class="btn btn-light"><span data-i18n="ctaBook">预约技术交流</span> <span class="arr">→</span></a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="index.html" class="brand">
+        <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#E8F0EE"/><path d="M6 21c3.2-3.2 5.4-3.2 8.6 0s5.4 3.2 8.6 0 4.6-3 5.8-1.2" stroke="#127A70" stroke-width="2.6" fill="none" stroke-linecap="round"/><circle cx="17" cy="11" r="3.2" fill="#7FD3C4"/></svg>
+        <span class="brand-name"><strong data-i18n="brandName">海浦麒</strong><span data-i18n="footTag">Carbonjour — Ocean heals climate</span></span>
+      </a>
+      <nav class="foot-links" data-i18n-attr="aria-label:footNav" aria-label="页脚导航">
+        <a href="technology.html" data-i18n="navTech">技术</a><a href="solutions.html" data-i18n="navSol">解决方案</a><a href="partnership.html" data-i18n="navPart">合作模式</a><a href="about.html" data-i18n="navAbout">关于我们</a><a href="news.html" data-i18n="navNews">动态</a><a href="contact.html" data-i18n="ctEye">联系我们</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="copy">© 2026 上海海浦麒碳科技有限公司</span>
+      <span class="foot-links"><a href="contact.html" data-i18n="privacy">隐私政策</a><a href="contact.html" data-i18n="terms">使用条款</a><a class="powered" href="https://hypha.co.nz/" target="_blank" rel="noopener">Powered by Hypha</a></span>
+    </div>
+    <p class="credits" data-i18n="credits">部分图片由 Captura 提供；其余图片来自 Pexels，遵循 Pexels 许可免费使用。</p>
+  </div>
+</footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

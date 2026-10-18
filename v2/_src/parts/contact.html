@@ -1,0 +1,39 @@
+<!-- CONTACT -->
+<section class="contact sec first" id="top" aria-labelledby="contact-t">
+  <img src="img/sea-texture.jpg" alt="" loading="lazy">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="label"><span data-i18n="ctEye">联系我们</span><span class="en">Start a conversation</span></span>
+      <h1 id="contact-t" data-i18n="ctH">聊聊你的<br>减碳场景</h1>
+      <p class="lead" data-i18n="ctLead">留下需求，我们的技术团队会在 2 个工作日内与你联系。</p>
+      <dl class="contact-info">
+        <div><dt data-i18n="ciEmail">邮箱</dt><dd>djh@carbonjour.com</dd></div>
+        <div><dt data-i18n="ciCo">公司</dt><dd data-i18n="coName">上海海浦麒碳科技有限公司</dd></div>
+        <div><dt data-i18n="ciAddr">地址</dt><dd data-i18n="addr">上海</dd></div>
+      </dl>
+    </div>
+    <form id="form" novalidate>
+      <div class="f full">
+        <label><span data-i18n="fIntent">合作意向</span> <i>*</i></label>
+        <div class="intents" role="radiogroup" data-i18n-attr="aria-label:fIntent" aria-label="合作意向">
+          <label><input type="radio" name="intent" value="tech" id="in-tech"><span data-i18n="ch1">技术引进 / 项目合作</span></label>
+          <label><input type="radio" name="intent" value="ed" id="in-ed"><span data-i18n="ch2">电渗析产品</span></label>
+          <label><input type="radio" name="intent" value="credits" id="in-credits"><span data-i18n="ch3">碳信用采购</span></label>
+          <label><input type="radio" name="intent" value="invest" id="in-invest"><span data-i18n="ch4">投资合作</span></label>
+          <label><input type="radio" name="intent" value="media" id="in-media"><span data-i18n="ch5">媒体 / 其他</span></label>
+        </div>
+        <span class="err" data-i18n="eIntent">请选择一个合作意向</span>
+      </div>
+      <div class="f"><label for="name"><span data-i18n="fName">姓名</span> <i>*</i></label><input id="name" name="name" autocomplete="name"><span class="err" data-i18n="eName">请填写姓名</span></div>
+      <div class="f"><label for="org" data-i18n="fOrg">单位</label><input id="org" name="org" autocomplete="organization"></div>
+      <div class="f"><label for="phone" data-i18n="fPhone">手机</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel"><span class="err" data-i18n="ePhone">手机号格式不正确</span></div>
+      <div class="f"><label for="email" data-i18n="fEmail">邮箱</label><input id="email" name="email" type="email" autocomplete="email"><span class="err" data-i18n="eEmail">请至少填写手机或邮箱，且格式正确</span></div>
+      <div class="f full"><label for="msg"><span data-i18n="fMsg">需求描述</span> <i>*</i></label><textarea id="msg" name="msg" data-i18n-attr="placeholder:fMsgPh" placeholder="例如：所在行业、设施位置、年排放量、希望了解的方向"></textarea><span class="err" data-i18n="eMsg">请简单描述你的需求</span></div>
+      <div class="form-foot">
+        <small data-i18n="fPrivacy">提交后会打开你的邮箱，内容将发送至 djh@carbonjour.com，仅用于回复本次咨询。</small>
+        <button class="btn btn-light" type="submit"><span data-i18n="fSubmit">提交需求</span> <span class="arr">→</span></button>
+      </div>
+      <div class="sent" id="sent" role="status" data-i18n="fSent">已为你打开邮件，发送后我们会在 2 个工作日内回复。如果没有弹出邮件窗口，请直接发送至 djh@carbonjour.com。</div>
+    </form>
+  </div>
+</section>
