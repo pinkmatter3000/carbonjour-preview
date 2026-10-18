@@ -187,13 +187,12 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:var(--
 .dark .eyebrow b{color:var(--accent-soft)}
 .dark .eyebrow .en{color:var(--on-deep-2)}
 .dark .lead{color:var(--on-deep-2)}
-/* 浅→深的过渡用固定像素、缓入缓出的色标，避免出现折痕；正文从已经变深的位置开始 */
-.part{background:linear-gradient(180deg,
-  #CFDCD8 0,#CBD9D5 30px,#BECFCC 60px,#A7BBB9 90px,#88A0A0 120px,#67827F 150px,
-  #4A686B 180px,#335257 210px,#223F46 245px,#163239 290px,#0F2830 345px,var(--deep) 420px)}
-.part{margin-top:-1px}
+/* 浅色区与深色区之间用一道海浪分界，深色区从一开始就是深色 */
+.part{background:var(--deep);padding-top:0}
+.sea-edge{position:relative;height:clamp(70px,9vw,130px);background:#CFDCD8;overflow:hidden}
+.sea-edge svg{position:absolute;left:0;bottom:-1px;width:100%;height:100%}
 .part .wrap{position:relative}
-.part-top{padding-top:clamp(130px,13vw,160px)}
+.part-top{padding-top:clamp(56px,7vw,96px)}
 .dark .eyebrow{color:var(--on-deep)}
 .flow{margin-top:64px;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
 .flow-step{padding:26px 22px 30px;border-radius:var(--r-md);background:rgba(231,239,236,.05);border:1px solid var(--line-deep);position:relative;transition:background .3s,border-color .3s}
@@ -584,6 +583,9 @@ html[data-lang=en] .adv-card .en{display:none}
 
 <!-- PARTNERSHIP -->
 <section class="part dark sec" id="partnership" aria-labelledby="part-t">
+  <div class="sea-edge" aria-hidden="true">
+    <svg viewBox="0 0 1440 130" preserveAspectRatio="none"><path fill="#8FAAA8" d="M0 58 C180 30 360 30 540 52 S900 88 1080 64 S1320 30 1440 44 V130 H0Z"/><path fill="#3E5F63" d="M0 84 C220 62 420 64 640 82 S1040 110 1240 90 S1380 74 1440 80 V130 H0Z"/><path fill="#0B222A" d="M0 108 C260 94 480 96 720 106 S1180 122 1440 104 V130 H0Z"/></svg>
+  </div>
   <div class="wrap part-top">
     <div class="rv">
       <div class="eyebrow"><b>03</b><span data-i18n="partEye">合作模式</span> <span class="en">From lab to deployment</span></div>
