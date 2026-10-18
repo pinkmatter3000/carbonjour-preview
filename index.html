@@ -187,9 +187,14 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:var(--
 .dark .eyebrow b{color:var(--accent-soft)}
 .dark .eyebrow .en{color:var(--on-deep-2)}
 .dark .lead{color:var(--on-deep-2)}
-.part{background:linear-gradient(180deg,#CFDCD8 0,#1B3D45 26%,var(--deep) 60%)}
+/* 浅→深的过渡用固定像素、缓入缓出的色标，避免出现折痕；正文从已经变深的位置开始 */
+.part{background:linear-gradient(180deg,
+  #CFDCD8 0,#CBD9D5 30px,#BECFCC 60px,#A7BBB9 90px,#88A0A0 120px,#67827F 150px,
+  #4A686B 180px,#335257 210px,#223F46 245px,#163239 290px,#0F2830 345px,var(--deep) 420px)}
+.part{margin-top:-1px}
 .part .wrap{position:relative}
-.part-top{padding-top:clamp(40px,6vw,80px)}
+.part-top{padding-top:clamp(130px,13vw,160px)}
+.dark .eyebrow{color:var(--on-deep)}
 .flow{margin-top:64px;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
 .flow-step{padding:26px 22px 30px;border-radius:var(--r-md);background:rgba(231,239,236,.05);border:1px solid var(--line-deep);position:relative;transition:background .3s,border-color .3s}
 .flow-step:hover{background:rgba(102,194,174,.09);border-color:rgba(102,194,174,.5)}
@@ -291,6 +296,7 @@ footer{background:var(--deep-2);color:var(--on-deep-2);font-size:13px;padding:56
 .foot .brand{color:var(--on-deep)}
 .foot-links{display:flex;gap:22px;flex-wrap:wrap}
 .foot-links a:hover{color:var(--on-deep)}
+.powered{font-family:var(--latin);letter-spacing:.04em;color:var(--on-deep);opacity:.75;padding-left:22px;border-left:1px solid var(--line-deep)}
 .foot-bottom{margin-top:40px;padding-top:22px;border-top:1px solid var(--line-deep);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 /* language switch */
@@ -758,7 +764,7 @@ html[data-lang=en] .adv-card .en{display:none}
     </div>
     <div class="foot-bottom">
       <span data-i18n="copy">© 2026 上海海浦麒碳科技有限公司</span>
-      <span class="foot-links"><a href="#contact" data-i18n="privacy">隐私政策</a><a href="#contact" data-i18n="terms">使用条款</a></span>
+      <span class="foot-links"><a href="#contact" data-i18n="privacy">隐私政策</a><a href="#contact" data-i18n="terms">使用条款</a><span class="powered">Powered by Hypha</span></span>
     </div>
   </div>
 </footer>
