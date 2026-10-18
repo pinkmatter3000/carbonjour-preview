@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>海浦麒 Carbonjour · 让海洋疗愈气候</title>
+<meta name="description" content="上海海浦麒碳科技有限公司是 Captura 在中国的唯一合作伙伴，引入直接海洋捕集（DOC）与双极膜电渗析技术，为沿海工业、海上能源、航运与资源企业提供碳移除与电化学解决方案。">
+<meta property="og:title" content="海浦麒 Carbonjour · 让海洋疗愈气候">
+<meta property="og:description" content="Captura 直接海洋捕集技术在中国的唯一合作伙伴。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230D2B33'/%3E%3Cpath d='M5 19c3-3 5-3 8 0s5 3 8 0 5-3 6-1' stroke='%2366C2AE' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='10' r='3' fill='%23F3F0E8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3F0E8;
+  --paper-2:#E9EEEA;
+  --mist:#DCE6E2;
+  --ink:#0D2B33;
+  --ink-2:#47616A;
+  --ink-3:#7A8F95;
+  --line:rgba(13,43,51,.13);
+  --accent:#2E8C7C;
+  --accent-soft:#66C2AE;
+  --deep:#0B222A;
+  --deep-2:#08191F;
+  --on-deep:#E7EFEC;
+  --on-deep-2:#9DB4B3;
+  --line-deep:rgba(231,239,236,.14);
+  --latin:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+  --wrap:1240px;
+  --r-lg:22px;--r-md:14px;--r-sm:8px;
+  --z-nav:20;--z-grain:30;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.7;font-size:16px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:16px;top:-60px;background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:var(--r-sm);z-index:99}
+.skip:focus{top:12px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(clamp(16px,4vw,40px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,4vw,40px),env(safe-area-inset-right,0px))}
+.en{font-family:var(--latin);font-style:normal}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:13px;color:var(--ink-2);letter-spacing:.08em}
+.eyebrow b{font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums}
+.eyebrow .en{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3)}
+h1,h2,h3{font-weight:600;letter-spacing:-.01em;text-wrap:balance}
+h2{font-size:clamp(30px,4.4vw,52px);line-height:1.18;margin-top:18px}
+h3{font-size:20px;line-height:1.4}
+.lead{font-size:clamp(16px,1.5vw,18px);color:var(--ink-2);max-width:36em;text-wrap:pretty}
+section{position:relative}
+.sec{padding:clamp(88px,11vw,150px) 0 clamp(96px,12vw,164px)}
+
+/* grain */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:var(--z-grain);opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-size:15px;font-weight:500;border:0;cursor:pointer;transition:transform .25s cubic-bezier(.2,.8,.2,1),background .25s,color .25s}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--ink);color:var(--paper)}
+.btn-primary:hover{background:var(--accent)}
+.btn-primary .arr{transition:transform .25s}
+.btn-primary:hover .arr{transform:translateX(3px)}
+.link{display:inline-flex;gap:8px;align-items:center;font-size:15px;font-weight:500;border-bottom:1px solid currentColor;padding-bottom:2px;transition:color .2s}
+.link:hover{color:var(--accent)}
+
+/* nav */
+.nav{position:fixed;top:0;left:0;right:0;padding-top:env(safe-area-inset-top,0px);z-index:var(--z-nav);transition:background .3s,box-shadow .3s,color .3s}
+.nav.scrolled{background:rgba(243,240,232,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line)}
+.nav.on-deep{background:rgba(11,34,42,.82);color:var(--on-deep);box-shadow:0 1px 0 var(--line-deep)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:34px;height:34px}
+.brand-name{display:flex;flex-direction:column;line-height:1.15}
+.brand-name strong{font-size:17px;letter-spacing:.12em}
+.brand-name span{font-family:var(--latin);font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;opacity:.65;margin-top:3px}
+.menu{display:flex;gap:30px;list-style:none;font-size:15px}
+.menu a{position:relative;padding:6px 0;opacity:.78;transition:opacity .2s}
+.menu a:hover,.menu a.active{opacity:1}
+.menu a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--accent);border-radius:2px}
+.nav-cta{padding:10px 18px;font-size:14px}
+.nav.on-deep .btn-primary{background:var(--on-deep);color:var(--deep)}
+.burger{display:none;background:none;border:0;width:40px;height:40px;cursor:pointer}
+.burger span{display:block;width:22px;height:2px;background:currentColor;margin:5px auto;border-radius:2px;transition:transform .3s,opacity .3s}
+.nav.open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav.open .burger span:nth-child(2){opacity:0}
+.nav.open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* hero */
+.hero{min-height:100dvh;display:flex;flex-direction:column;justify-content:flex-end;padding-top:120px;overflow:hidden;
+  background:radial-gradient(120% 70% at 78% 8%,#FBF8F1 0%,rgba(251,248,241,0) 60%),linear-gradient(180deg,var(--paper) 0%,var(--paper) 52%,var(--mist) 100%)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:end;position:relative;z-index:2}
+.hero h1{font-size:clamp(44px,7.6vw,104px);line-height:1.04;letter-spacing:-.025em;font-weight:600;margin-top:26px}
+.hero h1 .en{display:block;font-size:.36em;font-weight:400;color:var(--accent);margin-top:18px;letter-spacing:-.005em}
+.hero .lead{margin-top:28px}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:26px;margin-top:38px}
+.partner-tag{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 8px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--ink-2);background:rgba(255,255,255,.4)}
+.partner-tag i{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(46,140,124,.16);margin-left:6px}
+.hero-aside{justify-self:end;max-width:330px;padding-bottom:10px}
+.hero-aside p{font-size:14px;color:var(--ink-2);border-left:2px solid var(--accent);padding-left:16px}
+.ocean{position:relative;height:clamp(200px,30vw,340px);margin-top:56px}
+.ocean svg.waves{position:absolute;left:0;bottom:0;width:200%;height:100%}
+.ocean .w1{animation:drift 26s linear infinite}
+.ocean .w2{animation:drift 18s linear infinite reverse}
+.ocean .w3{animation:drift 34s linear infinite}
+@keyframes drift{to{transform:translateX(-50%)}}
+.bubble{position:absolute;bottom:20%;font-family:var(--latin);color:var(--ink);font-size:12px;font-weight:500;display:flex;align-items:center;gap:6px;opacity:0;animation:rise 9s ease-in infinite}
+.bubble::before{content:"";width:10px;height:10px;border-radius:50%;border:1.5px solid var(--ink-2)}
+@keyframes rise{0%{transform:translateY(-140px);opacity:0}15%{opacity:.75}70%{opacity:.6}100%{transform:translateY(60px);opacity:0}}
+.stats{position:relative;z-index:3;background:var(--deep);color:var(--on-deep)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:34px 26px 38px;border-left:1px solid var(--line-deep)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat strong{display:block;font-family:var(--latin);font-weight:300;font-size:clamp(40px,4.6vw,60px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.stat strong small{font-size:.42em;font-family:var(--sans);letter-spacing:0;margin-left:6px;color:var(--accent-soft)}
+.stat span{display:block;margin-top:12px;font-size:14px;color:var(--on-deep-2);max-width:17em}
+
+/* why ocean */
+.why{background:var(--paper-2)}
+.why-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,7vw,110px);align-items:start}
+.why-quote{font-size:clamp(24px,2.6vw,34px);line-height:1.5;font-weight:500;text-wrap:pretty}
+.why-quote em{font-style:normal;color:var(--accent)}
+.why-list{margin-top:44px;display:grid;gap:0;border-top:1px solid var(--line)}
+.why-list div{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.why-list dt{font-family:var(--latin);font-weight:300;font-size:34px;line-height:1;font-variant-numeric:tabular-nums}
+.why-list dd{color:var(--ink-2);font-size:15px}
+
+/* technology */
+.tech{background:linear-gradient(180deg,var(--paper-2),#DFE8E4)}
+.tech-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end}
+.steps{margin-top:72px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;counter-reset:s}
+.steps::before{content:"";position:absolute;top:56px;left:6%;right:6%;height:1px;background:repeating-linear-gradient(90deg,var(--ink-3) 0 6px,transparent 6px 12px)}
+.step{padding:0 22px 0 0;position:relative}
+.step-ico{width:112px;height:112px;border-radius:50%;background:var(--paper);display:grid;place-items:center;position:relative;box-shadow:0 18px 40px -22px rgba(13,43,51,.45);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.step:hover .step-ico{transform:translateY(-6px)}
+.step-ico svg{width:56px;height:56px}
+.step-ico::after{counter-increment:s;content:"0" counter(s);position:absolute;top:-4px;right:-4px;width:32px;height:32px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:12px;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.step h3{margin-top:28px}
+.step p{margin-top:10px;font-size:15px;color:var(--ink-2);max-width:17em}
+.tech-out{margin-top:72px;display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.out{padding:30px 32px;border-radius:var(--r-lg);background:rgba(255,255,255,.55);display:flex;gap:22px;align-items:flex-start}
+.out .tag{flex:none;font-size:12px;padding:4px 10px;border-radius:var(--r-sm);background:var(--ink);color:var(--paper);margin-top:3px}
+.out p{color:var(--ink-2);font-size:15px;margin-top:6px}
+.ed{margin-top:20px;border-radius:var(--r-lg);background:var(--ink);color:var(--on-deep);padding:clamp(30px,4vw,52px);display:grid;grid-template-columns:1.1fr .9fr;gap:40px;overflow:hidden;position:relative}
+.ed::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(102,194,174,.28),transparent 65%)}
+.ed .eyebrow{color:var(--on-deep-2)}
+.ed .eyebrow b{color:var(--accent-soft)}
+.ed h3{font-size:clamp(24px,2.6vw,32px);margin-top:16px}
+.ed p{color:var(--on-deep-2);margin-top:14px;max-width:32em;font-size:15px}
+.ed-apps{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start;position:relative;z-index:1}
+.ed-apps span{padding:10px 16px;border:1px solid var(--line-deep);border-radius:var(--r-sm);font-size:14px;transition:background .2s,border-color .2s}
+.ed-apps span:hover{background:rgba(102,194,174,.12);border-color:var(--accent-soft)}
+.ed-apps .big{flex-basis:100%;border:0;padding:0 0 8px;font-family:var(--latin);font-weight:300;font-size:64px;line-height:1;letter-spacing:-.02em;color:var(--accent-soft)}
+.ed-apps .big small{font-family:var(--sans);font-style:normal;font-size:14px;color:var(--on-deep-2);margin-left:10px}
+
+/* timeline */
+.timeline{margin-top:96px}
+.tl{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);margin-top:32px}
+.tl li{list-style:none;padding:24px 20px 0 0;position:relative}
+.tl li::before{content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;border-radius:50%;background:var(--ink)}
+.tl li.future::before{background:var(--paper);border:1.5px solid var(--accent)}
+.tl .yr{font-size:13px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.tl strong{display:block;font-family:var(--latin);font-weight:300;font-size:32px;letter-spacing:-.01em;line-height:1.1;margin-top:6px}
+.tl p{font-size:14px;color:var(--ink-2);margin-top:8px;max-width:15em}
+
+/* solutions */
+.sol{background:linear-gradient(180deg,#DFE8E4,#CFDCD8)}
+.sol-head{display:flex;justify-content:space-between;align-items:end;gap:40px;flex-wrap:wrap}
+.sol-list{margin-top:64px;border-top:1px solid var(--line)}
+.sol-item{display:grid;grid-template-columns:60px 1.1fr 1.4fr 180px;gap:28px;padding:34px 0;border-bottom:1px solid var(--line);align-items:start;transition:padding .35s cubic-bezier(.2,.8,.2,1),background .35s}
+.sol-item:hover{background:rgba(255,255,255,.35);padding-left:18px;padding-right:18px}
+.sol-item .n{font-family:var(--latin);font-weight:300;font-size:20px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.sol-item h3{font-size:clamp(20px,2vw,24px)}
+.sol-item .who{display:block;font-size:13px;color:var(--accent);margin-top:6px;font-weight:500}
+.sol-item p{color:var(--ink-2);font-size:15px}
+.sol-item .proof{font-size:13px;color:var(--ink-2);border-left:1px solid var(--line);padding-left:16px}
+.sol-item .proof b{display:block;color:var(--ink);font-size:14px;font-weight:600;margin-bottom:2px}
+.flag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:4px;background:rgba(13,43,51,.08);color:var(--ink-2);margin-left:8px;vertical-align:3px;font-weight:500}
+
+/* partnership (dark from here) */
+.dark{color:var(--on-deep)}
+.dark .eyebrow{color:var(--on-deep-2)}
+.dark .eyebrow b{color:var(--accent-soft)}
+.dark .eyebrow .en{color:var(--on-deep-2)}
+.dark .lead{color:var(--on-deep-2)}
+.part{background:linear-gradient(180deg,#CFDCD8 0,#1B3D45 26%,var(--deep) 60%)}
+.part .wrap{position:relative}
+.part-top{padding-top:clamp(40px,6vw,80px)}
+.flow{margin-top:64px;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.flow-step{padding:26px 22px 30px;border-radius:var(--r-md);background:rgba(231,239,236,.05);border:1px solid var(--line-deep);position:relative;transition:background .3s,border-color .3s}
+.flow-step:hover{background:rgba(102,194,174,.09);border-color:rgba(102,194,174,.5)}
+.flow-step .k{font-size:12px;color:var(--accent-soft);font-variant-numeric:tabular-nums;letter-spacing:.1em}
+.flow-step h3{font-size:18px;margin-top:14px}
+.flow-step p{font-size:14px;color:var(--on-deep-2);margin-top:8px}
+.flow-step:not(:last-child)::after{content:"";position:absolute;right:-9px;top:50%;width:6px;height:6px;border-top:1.5px solid var(--on-deep-2);border-right:1.5px solid var(--on-deep-2);transform:translateY(-50%) rotate(45deg)}
+.modes{margin-top:96px;display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,96px)}
+.modes h3.big{font-size:clamp(26px,3vw,38px);line-height:1.3}
+.mode-list{list-style:none}
+.mode-list li{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line-deep)}
+.mode-list li:last-child{border-bottom:1px solid var(--line-deep)}
+.mode-list strong{font-weight:600}
+.mode-list span{color:var(--on-deep-2);font-size:15px}
+.adv{margin-top:110px;display:grid;grid-template-columns:repeat(12,1fr);gap:20px}
+.adv-card{border-radius:var(--r-lg);padding:34px;background:linear-gradient(160deg,rgba(231,239,236,.07),rgba(231,239,236,.02));border:1px solid var(--line-deep)}
+.adv-card:nth-child(1){grid-column:span 7}
+.adv-card:nth-child(2){grid-column:span 5}
+.adv-card:nth-child(3){grid-column:span 12;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.adv-card .en{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-soft)}
+.adv-card h3{font-size:22px;margin-top:10px}
+.adv-card p{color:var(--on-deep-2);margin-top:12px;font-size:15px;max-width:34em}
+.chain{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:14px}
+.chain span{padding:10px 16px;border-radius:999px;background:rgba(102,194,174,.12);color:var(--on-deep)}
+.chain i{font-style:normal;color:var(--on-deep-2)}
+
+/* about */
+.about{background:var(--deep)}
+.about-grid{display:grid;grid-template-columns:7fr 5fr;gap:clamp(40px,6vw,96px);align-items:start}
+.name-card{border-radius:var(--r-lg);padding:36px;background:var(--deep-2);border:1px solid var(--line-deep);position:sticky;top:110px}
+.name-card .zh{font-size:64px;font-weight:600;letter-spacing:.12em;line-height:1}
+.name-card .zh span{color:var(--accent-soft)}
+.name-card dl{margin-top:28px;display:grid;gap:16px}
+.name-card dt{font-size:12px;color:var(--on-deep-2);letter-spacing:.1em}
+.name-card dd{font-size:15px;margin-top:2px}
+.about-body p{color:var(--on-deep-2);margin-top:20px;max-width:36em}
+.about-body p strong{color:var(--on-deep);font-weight:500}
+.team{margin-top:64px}
+.team-grid{margin-top:24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.member{padding:22px;border-radius:var(--r-md);border:1px solid var(--line-deep);display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start}
+.avatar{width:52px;height:52px;border-radius:14px;background:linear-gradient(140deg,#1F4A52,#123139);display:grid;place-items:center;font-family:var(--latin);font-size:13px;font-weight:600;letter-spacing:.06em;color:var(--accent-soft)}
+.member strong{display:block;font-size:15px}
+.member span{font-size:13px;color:var(--on-deep-2);line-height:1.55;display:block;margin-top:4px}
+.backed{margin-top:110px;padding-top:44px;border-top:1px solid var(--line-deep);display:grid;grid-template-columns:260px 1fr;gap:40px;align-items:center}
+.backed p{font-size:14px;color:var(--on-deep-2)}
+.logos{display:flex;flex-wrap:wrap;gap:14px 40px;font-family:var(--latin);font-weight:500;font-size:20px;letter-spacing:.02em;color:var(--on-deep);opacity:.82}
+
+/* insights */
+.ins{background:linear-gradient(180deg,var(--deep),#0A1E25)}
+.ins-grid{margin-top:56px;display:grid;grid-template-columns:1.3fr 1fr;gap:20px}
+.post{border-radius:var(--r-lg);border:1px solid var(--line-deep);padding:30px;display:flex;flex-direction:column;transition:border-color .3s,transform .4s cubic-bezier(.2,.8,.2,1)}
+.post:hover{border-color:rgba(102,194,174,.5);transform:translateY(-4px)}
+.post .meta{display:flex;gap:14px;font-size:13px;color:var(--on-deep-2);font-variant-numeric:tabular-nums}
+.post .meta b{font-weight:500;color:var(--accent-soft)}
+.post h3{margin-top:14px;font-size:20px}
+.post p{color:var(--on-deep-2);font-size:15px;margin-top:10px}
+.post .more{margin-top:auto;padding-top:24px;font-size:14px;color:var(--on-deep)}
+.post.feature{grid-row:span 2;background:radial-gradient(90% 60% at 100% 0%,rgba(102,194,174,.16),transparent 60%),var(--deep-2)}
+.post.feature h3{font-size:clamp(22px,2.4vw,30px);line-height:1.35}
+.post.feature .pic{margin:26px 0 0;border-radius:var(--r-md);aspect-ratio:16/8;background:linear-gradient(180deg,#12333B,#0A2027);position:relative;overflow:hidden}
+.post.feature .pic svg{position:absolute;inset:0;width:100%;height:100%}
+
+/* contact */
+.contact{background:#0A1E25}
+.contact-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,96px)}
+.contact h2{font-size:clamp(34px,5vw,60px)}
+.contact-info{margin-top:40px;display:grid;gap:18px;font-size:15px}
+.contact-info dt{font-size:12px;color:var(--on-deep-2);letter-spacing:.1em}
+.contact-info dd a{border-bottom:1px solid var(--line-deep);transition:border-color .2s}
+.contact-info dd a:hover{border-color:var(--accent-soft)}
+form{border-radius:var(--r-lg);background:rgba(231,239,236,.04);border:1px solid var(--line-deep);padding:clamp(24px,3.4vw,40px);display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.f{display:flex;flex-direction:column;gap:8px}
+.f.full{grid-column:1/-1}
+.f label{font-size:13px;color:var(--on-deep-2)}
+.f label i{color:var(--accent-soft);font-style:normal}
+.f input,.f select,.f textarea{background:rgba(8,25,31,.6);border:1px solid var(--line-deep);border-radius:var(--r-sm);padding:13px 14px;color:var(--on-deep);font-size:15px;transition:border-color .2s,background .2s}
+.f select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--on-deep-2) 50%),linear-gradient(135deg,var(--on-deep-2) 50%,transparent 50%);background-position:calc(100% - 20px) 55%,calc(100% - 15px) 55%;background-size:5px 5px;background-repeat:no-repeat}
+.f select option{background:var(--deep);color:var(--on-deep)}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--accent-soft);background:rgba(8,25,31,.9)}
+.f textarea{min-height:120px;resize:vertical}
+.f .err{font-size:12px;color:#F0A58F;min-height:0;display:none}
+.f.invalid input,.f.invalid select,.f.invalid textarea{border-color:#F0A58F}
+.f.invalid .err{display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;padding:9px 14px;border-radius:999px;border:1px solid var(--line-deep);font-size:14px;color:var(--on-deep);transition:background .2s,border-color .2s}
+.chips input:checked+span{background:var(--accent);border-color:var(--accent)}
+.chips input:focus-visible+span{outline:2px solid var(--accent-soft);outline-offset:2px}
+.form-foot{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:6px}
+.form-foot small{font-size:12px;color:var(--on-deep-2);max-width:26em}
+.contact .btn-primary{background:var(--on-deep);color:var(--deep)}
+.contact .btn-primary:hover{background:var(--accent-soft)}
+.sent{grid-column:1/-1;display:none;padding:16px 18px;border-radius:var(--r-sm);background:rgba(102,194,174,.12);border:1px solid rgba(102,194,174,.4);font-size:15px}
+.sent.show{display:block}
+
+footer{background:var(--deep-2);color:var(--on-deep-2);font-size:13px;padding:56px 0 40px}
+.foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-end}
+.foot .brand{color:var(--on-deep)}
+.foot-links{display:flex;gap:22px;flex-wrap:wrap}
+.foot-links a:hover{color:var(--on-deep)}
+.foot-bottom{margin-top:40px;padding-top:22px;border-top:1px solid var(--line-deep);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* language switch */
+.nav-right{display:flex;align-items:center;gap:14px}
+.lang{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:3px;font-size:13px;line-height:1}
+.nav.on-deep .lang{border-color:var(--line-deep)}
+.lang button{background:none;border:0;cursor:pointer;padding:7px 11px;border-radius:999px;opacity:.6;transition:background .2s,opacity .2s,color .2s}
+.lang button:hover{opacity:1}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper);opacity:1}
+.nav.on-deep .lang button[aria-pressed="true"]{background:var(--on-deep);color:var(--deep)}
+.nav.open .lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+html[data-lang=en] .eyebrow .en{display:none}
+html[data-lang=en] .eyebrow{letter-spacing:.04em}
+html[data-lang=en] .hero h1 .en{font-family:var(--sans);font-weight:500;font-size:.4em;letter-spacing:.06em}
+html[data-lang=en] .hero h1{font-size:clamp(36px,4.6vw,66px);line-height:1.05}
+html[data-lang=en] h2{letter-spacing:-.02em;font-size:clamp(28px,3.8vw,46px)}
+html[data-lang=en] .brand-name strong{letter-spacing:.04em}
+html[data-lang=en] .mode-list li{grid-template-columns:190px 1fr}
+html[data-lang=en] .flow-step h3{font-size:17px}
+html[data-lang=en] .adv-card .en{display:none}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .ocean .w1,.ocean .w2,.ocean .w3,.bubble{animation:none}
+  .bubble{display:none}
+}
+
+/* responsive */
+@media (max-width:1080px){
+  .menu{gap:20px;font-size:14px}
+  .sol-item{grid-template-columns:44px 1fr 1fr}
+  .sol-item .proof{grid-column:2/-1;border-left:0;padding-left:0}
+  .flow{grid-template-columns:repeat(3,1fr)}
+  .flow-step::after{display:none}
+}
+@media (max-width:900px){
+  .burger{display:block}
+  .nav-cta{display:none}
+  .menu{position:fixed;top:72px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);color:var(--ink);padding:8px 16px 20px;box-shadow:0 20px 30px -20px rgba(13,43,51,.3);transform:translateY(-8px);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+  .menu a{display:block;padding:14px 4px;border-bottom:1px solid var(--line);font-size:16px;opacity:1}
+  .menu a.active::after{display:none}
+  .nav.open .menu{opacity:1;transform:none;pointer-events:auto}
+  .nav.open{background:var(--paper);color:var(--ink)}
+  .hero-grid,.why-grid,.tech-head,.ed,.modes,.about-grid,.contact-grid,.ins-grid,.backed{grid-template-columns:1fr}
+  .hero-aside{justify-self:start}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .stat{padding:26px 18px 28px}
+  .stat:nth-child(odd){border-left:0;padding-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line-deep)}
+  .steps{grid-template-columns:1fr 1fr;row-gap:48px}
+  .steps::before{display:none}
+  .tech-out{grid-template-columns:1fr}
+  .tl{grid-template-columns:1fr;border-top:0;border-left:1px solid var(--line);margin-left:4px}
+  .tl li{padding:0 0 28px 26px}
+  .tl li::before{top:6px;left:-5px}
+  .adv-card:nth-child(n){grid-column:span 12}
+  .adv-card:nth-child(3){grid-template-columns:1fr;gap:20px}
+  .name-card{position:static}
+  .post.feature{grid-row:auto}
+}
+@media (max-width:600px){
+  body{font-size:15px}
+  .flow{grid-template-columns:1fr}
+  .sol-item{grid-template-columns:1fr;gap:12px;padding:28px 0}
+  .sol-item:hover{padding-left:0;padding-right:0;background:none}
+  .sol-item .proof{grid-column:auto}
+  .why-list div{grid-template-columns:84px 1fr}
+  .why-list dt{font-size:26px}
+  .mode-list li{grid-template-columns:1fr;gap:4px}
+  .steps{grid-template-columns:1fr}
+  .step-ico{width:88px;height:88px}
+  .step-ico svg{width:44px;height:44px}
+  form{grid-template-columns:1fr}
+  .name-card .zh{font-size:48px}
+  .ed-apps .big{font-size:52px}
+  .out{flex-direction:column;gap:12px;padding:24px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">跳到正文</a>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" data-i18n-attr="aria-label:brandHome" aria-label="海浦麒 Carbonjour 首页">
+      <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="currentColor" opacity=".95"/><path d="M6 21c3.2-3.2 5.4-3.2 8.6 0s5.4 3.2 8.6 0 4.6-3 5.8-1.2" stroke="#66C2AE" stroke-width="2.4" fill="none" stroke-linecap="round"/><circle cx="17" cy="11" r="3.2" fill="#F3F0E8"/></svg>
+      <span class="brand-name"><strong data-i18n="brandName">海浦麒</strong><span data-i18n="brandSub">Carbonjour</span></span>
+    </a>
+    <nav data-i18n-attr="aria-label:navLabel" aria-label="主导航">
+      <ul class="menu" id="menu">
+        <li><a href="#technology" data-i18n="navTech">技术</a></li>
+        <li><a href="#solutions" data-i18n="navSol">解决方案</a></li>
+        <li><a href="#partnership" data-i18n="navPart">合作模式</a></li>
+        <li><a href="#about" data-i18n="navAbout">关于我们</a></li>
+        <li><a href="#insights" data-i18n="navIns">洞察</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language / 语言">
+        <button type="button" data-lang="zh" aria-pressed="true" lang="zh-CN">中</button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+      <a href="#contact" class="btn btn-primary nav-cta"><span data-i18n="ctaBook">预约技术交流</span> <span class="arr">→</span></a>
+      <button class="burger" id="burger" data-i18n-attr="aria-label:menuOpen" aria-label="打开菜单" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="partner-tag"><i></i><span data-i18n="heroTag">Captura 在中国的唯一合作伙伴</span></span>
+      <h1><span data-i18n="heroH1">让海洋，<br>替地球呼吸。</span><span class="en" data-i18n="heroH1Sub">Ocean heals climate.</span></h1>
+      <p class="lead" data-i18n="heroLead">海洋每年吸收人类约三分之一的碳排放。我们把源自加州理工的直接海洋捕集（DOC）与双极膜电渗析技术带到中国，帮助沿海工业、海上能源与航运企业，用海水和绿电完成规模化碳移除。</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary"><span data-i18n="ctaBook">预约技术交流</span> <span class="arr">→</span></a>
+        <a href="#technology" class="link" data-i18n="heroLink">了解技术原理</a>
+      </div>
+    </div>
+    <aside class="hero-aside">
+      <p data-i18n="heroAside">“海浦麒”取自英文 <span class="en">capture</span> 的音译，也谐音“海捕气”——从海水中捕获二氧化碳。</p>
+    </aside>
+  </div>
+
+  <div class="ocean" aria-hidden="true">
+    <span class="bubble" style="left:14%;animation-delay:0s">CO₂</span>
+    <span class="bubble" style="left:37%;animation-delay:3.2s">CO₂</span>
+    <span class="bubble" style="left:62%;animation-delay:1.6s">CO₂</span>
+    <span class="bubble" style="left:84%;animation-delay:5s">CO₂</span>
+    <svg class="waves w1" viewBox="0 0 2880 340" preserveAspectRatio="none"><path fill="#B9CDC8" d="M0 120 C240 70 480 70 720 120 S1200 170 1440 120 S1920 70 2160 120 S2640 170 2880 120 V340 H0Z"/></svg>
+    <svg class="waves w2" viewBox="0 0 2880 340" preserveAspectRatio="none"><path fill="#5F8F8C" opacity=".75" d="M0 190 C180 150 360 150 540 190 S900 230 1080 190 S1260 150 1440 190 S1800 230 1980 190 S2340 150 2520 190 S2700 230 2880 190 V340 H0Z"/></svg>
+    <svg class="waves w3" viewBox="0 0 2880 340" preserveAspectRatio="none"><path fill="#0B222A" d="M0 260 C300 230 420 230 720 260 S1140 290 1440 260 S1860 230 2160 260 S2580 290 2880 260 V340 H0Z"/></svg>
+  </div>
+
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><strong>150<small>×</small></strong><span data-i18n="stat1">按体积计，海水中的 CO₂ 浓度约为空气的 150 倍</span></div>
+      <div class="stat"><strong>1,000<small data-i18n="unitTpy">吨/年</small></strong><span data-i18n="stat2">夏威夷第三代试点，与 Equinor 合作，2025 年运行</span></div>
+      <div class="stat"><strong>0<small data-i18n="unitAdd">添加剂</small></strong><span data-i18n="stat3">只用海水和可再生电力，不向海洋添加任何物质，无副产物</span></div>
+      <div class="stat"><strong>10<small>×</small></strong><span data-i18n="stat4">自研双极膜电渗析性能，最高可达主流方案的 10 倍</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY OCEAN -->
+<section class="why sec" aria-labelledby="why-t">
+  <div class="wrap why-grid">
+    <div class="rv">
+      <div class="eyebrow"><b>00</b><span data-i18n="whyEye">为什么是海洋</span> <span class="en">Why the ocean</span></div>
+      <h2 id="why-t" data-i18n="whyH">地球上最大的碳汇，<br>一直在替我们工作。</h2>
+    </div>
+    <div class="rv">
+      <p class="why-quote" data-i18n="whyQuote">海洋与大气始终保持平衡。<em>从表层海水中取走一部分 CO₂，海洋就会从空气中再吸收等量的 CO₂</em>——直接海洋捕集做的，就是放大这个自然过程。</p>
+      <dl class="why-list">
+        <div><dt>⅔</dt><dd data-i18n="why1">地球表面被海洋覆盖，部署几乎不占用土地，也不消耗淡水。</dd></div>
+        <div><dt>⅓</dt><dd data-i18n="why2">人类排放的 CO₂ 约有三分之一被海洋吸收，代价是海水持续酸化。</dd></div>
+        <div><dt>2</dt><dd data-i18n="why3">系统只需要两种输入：海水与可再生电力。</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGY -->
+<section class="tech sec" id="technology" aria-labelledby="tech-t">
+  <div class="wrap">
+    <div class="tech-head rv">
+      <div>
+        <div class="eyebrow"><b>01</b><span data-i18n="techEye">技术原理</span> <span class="en">Direct Ocean Capture</span></div>
+        <h2 id="tech-t" data-i18n="techH">四步，把空气里的碳<br>交给海洋，再取出来。</h2>
+      </div>
+      <p class="lead" data-i18n="techLead">核心是 Captura 自研的双极膜电渗析（BPMED）：用电把海水中的盐分离成酸和碱，不需要任何化学品投加。</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step rv" style="list-style:none">
+        <div class="step-ico"><svg viewBox="0 0 56 56" fill="none" stroke="#0D2B33" stroke-width="2" stroke-linecap="round"><path d="M6 34c4-4 7-4 11 0s7 4 11 0 7-4 11 0 7 4 11 0"/><path d="M6 42c4-4 7-4 11 0s7 4 11 0 7-4 11 0 7 4 11 0" opacity=".45"/><path d="M28 28V8m0 0-6 6m6-6 6 6" stroke="#2E8C7C"/></svg></div>
+        <h3 data-i18n="s1h">取少量海水</h3>
+        <p data-i18n="s1p">抽取一小部分海水，经预处理后进入系统，可复用电厂、淡化厂已有的取水设施。</p>
+      </li>
+      <li class="step rv" style="list-style:none">
+        <div class="step-ico"><svg viewBox="0 0 56 56" fill="none" stroke="#0D2B33" stroke-width="2" stroke-linecap="round"><rect x="12" y="10" width="32" height="36" rx="4"/><path d="M22 10v36M34 10v36" stroke="#2E8C7C"/><path d="M28 4l-3 6h6l-3 6"/></svg></div>
+        <h3 data-i18n="s2h">电渗析制酸碱</h3>
+        <p data-i18n="s2p">可再生电力驱动双极膜电堆，把海水中的盐分离为酸液和碱液。</p>
+      </li>
+      <li class="step rv" style="list-style:none">
+        <div class="step-ico"><svg viewBox="0 0 56 56" fill="none" stroke="#0D2B33" stroke-width="2" stroke-linecap="round"><path d="M18 46h20M22 46V26l-6-14h24l-6 14v20"/><circle cx="28" cy="20" r="2.5" stroke="#2E8C7C"/><circle cx="23" cy="10" r="2" stroke="#2E8C7C"/><circle cx="33" cy="6" r="1.6" stroke="#2E8C7C"/></svg></div>
+        <h3 data-i18n="s3h">释放并收集 CO₂</h3>
+        <p data-i18n="s3p">酸液让海水中的溶解无机碳转化为 CO₂ 气体，经气体分离得到高纯度、可计量的 CO₂ 气流。</p>
+      </li>
+      <li class="step rv" style="list-style:none">
+        <div class="step-ico"><svg viewBox="0 0 56 56" fill="none" stroke="#0D2B33" stroke-width="2" stroke-linecap="round"><path d="M6 38c4-4 7-4 11 0s7 4 11 0 7-4 11 0 7 4 11 0"/><path d="M28 30V10m0 20-6-6m6 6 6-6" stroke="#2E8C7C"/><path d="M40 10a4 4 0 1 1 6 3" opacity=".5"/></svg></div>
+        <h3 data-i18n="s4h">海水回流，再吸碳</h3>
+        <p data-i18n="s4p">碱液恢复海水 pH 后排回海洋。脱碳后的海水会从大气中重新吸收等量的 CO₂。</p>
+      </li>
+    </ol>
+
+    <div class="tech-out">
+      <div class="out rv"><span class="tag" data-i18n="o1t">封存</span><div><h3 data-i18n="o1h">永久地质封存</h3><p data-i18n="o1p">与成熟的地质封存服务商合作，将 CO₂ 安全封存数千年，形成可核证的碳移除量。</p></div></div>
+      <div class="out rv"><span class="tag" data-i18n="o2t">利用</span><div><h3 data-i18n="o2h">可持续燃料与材料</h3><p data-i18n="o2p">CO₂ 可转化为航空、航运用的合成燃料，或塑料、化学品、建材等低碳产品。</p></div></div>
+    </div>
+
+    <div class="ed rv">
+      <div>
+        <div class="eyebrow"><b>01·B</b><span data-i18n="edEye">平台技术</span> <span class="en">Bipolar membrane electrodialysis</span></div>
+        <h3 data-i18n="edH">同一块膜，不止于碳移除。</h3>
+        <p data-i18n="edP">Captura 在加州帕萨迪纳的工厂已量产双极膜（BPM）、阳离子交换膜（CEM）与电渗析电堆。膜材料不含 PFAS，在高电流密度下仍接近热力学极限电压运行，电压衰减低于 10 µV/h，支持多年使用寿命。</p>
+      </div>
+      <div class="ed-apps">
+        <div class="big">10×<small data-i18n="edBig">性能，更低能耗与投资</small></div>
+        <span data-i18n="ed1">直接提锂</span><span data-i18n="ed2">海水淡化浓水资源化</span><span data-i18n="ed3">工业废水资源化</span><span data-i18n="ed4">长时储能</span><span data-i18n="ed5">电化学碳捕集</span><span data-i18n="ed6">整套交钥匙方案</span>
+      </div>
+    </div>
+
+    <div class="timeline rv">
+      <div class="eyebrow"><b>01·C</b><span data-i18n="tlEye">发展里程碑</span> <span class="en">Scaled 1,000× in three years</span></div>
+      <ol class="tl">
+        <li><span class="yr">2022</span><strong data-i18n="tl1s">1 吨/年</strong><p data-i18n="tl1p">第一代系统，加州理工 Kerckhoff 海洋实验室</p></li>
+        <li><span class="yr">2023</span><strong data-i18n="tl2s">100 吨/年</strong><p data-i18n="tl2p">第二代系统，洛杉矶港 AltaSea 海洋研究基地</p></li>
+        <li><span class="yr">2025</span><strong data-i18n="tl3s">1,000 吨/年</strong><p data-i18n="tl3p">第三代试点，夏威夷海洋科技园，与 Equinor 合作</p></li>
+        <li class="future"><span class="yr" data-i18n="tl4y">进行中</span><strong data-i18n="tl4s">中国落地</strong><p data-i18n="tl4p">海浦麒推进长三角 DOC 中试，探索与海上风电、海洋牧场耦合</p></li>
+        <li class="future"><span class="yr" data-i18n="tl5y">远期</span><strong data-i18n="tl5s">百万吨级</strong><p data-i18n="tl5p">由海上可再生能源驱动的独立碳移除平台</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section class="sol sec" id="solutions" aria-labelledby="sol-t">
+  <div class="wrap">
+    <div class="sol-head rv">
+      <div>
+        <div class="eyebrow"><b>02</b><span data-i18n="solEye">解决方案</span> <span class="en">Find your scenario</span></div>
+        <h2 id="sol-t" data-i18n="solH">从你已有的设施出发。</h2>
+      </div>
+      <p class="lead" data-i18n="solLead">早期商业化优先复用现有海洋基础设施——这意味着更低的投资和更快的落地。</p>
+    </div>
+
+    <div class="sol-list">
+      <article class="sol-item rv">
+        <span class="n">01</span>
+        <div><h3 data-i18n="sol1h">沿海电厂 · 海水淡化 · 港口</h3><span class="who" data-i18n="sol1w">适合：海水冷却电厂、淡化厂、LNG 接收站、港口业主</span></div>
+        <p data-i18n="sol1p">与已有取排水系统共址部署 DOC 装置，省去新建取水工程，把现有设施变成碳移除资产。</p>
+        <div class="proof" data-i18n="sol1f"><b>共址部署</b>Captura 早期商业化路线</div>
+      </article>
+      <article class="sol-item rv">
+        <span class="n">02</span>
+        <div><h3 data-i18n="sol2h">海上风电 · 退役油气平台</h3><span class="who" data-i18n="sol2w">适合：海上风电开发商、海洋油气企业</span></div>
+        <p data-i18n="sol2p">利用弃风或低谷绿电驱动捕集，提高消纳；把退役平台改造为碳移除设施，延续资产价值。</p>
+        <div class="proof" data-i18n="sol2f"><b>源网荷一体</b>非高峰绿电即可运行</div>
+      </article>
+      <article class="sol-item rv">
+        <span class="n">03</span>
+        <div><h3 data-i18n="sol3h">航运减排与碳移除采购</h3><span class="who" data-i18n="sol3w">适合：船东、航运公司、港航集团</span></div>
+        <p data-i18n="sol3p">面向 IMO 碳强度要求与欧盟航运碳成本，提供碳移除量采购、船载与港口捕集方案研究。</p>
+        <div class="proof" data-i18n="sol3f"><b>30,000 吨</b>商船三井向 Captura 采购的碳移除量</div>
+      </article>
+      <article class="sol-item rv">
+        <span class="n">04</span>
+        <div><h3 data-i18n="sol4h">盐湖提锂 · 浓盐水与废水资源化</h3><span class="who" data-i18n="sol4w">适合：锂资源企业、化工园区、水务公司、储能企业</span></div>
+        <p data-i18n="sol4p">直接供应双极膜与电渗析电堆，或按工况定制整套系统，就地制备酸碱、回收资源、降低药剂成本。</p>
+        <div class="proof" data-i18n="sol4f"><b>电渗析产品</b>膜、电堆、交钥匙系统</div>
+      </article>
+      <article class="sol-item rv">
+        <span class="n">05</span>
+        <div><h3 data-i18n="sol5h">海洋牧场与水产养殖<span class="flag">研究阶段</span></h3><span class="who" data-i18n="sol5w">适合：海洋牧场、近海养殖区、沿海地方政府</span></div>
+        <p data-i18n="sol5p">DOC 排出的海水 CO₂ 更低、酸性略弱，在海湾等半封闭海域有望缓解局部酸化。正与第三方专家共同评估。</p>
+        <div class="proof" data-i18n="sol5f"><b>协同效益</b>碳移除 + 海洋生态</div>
+      </article>
+      <article class="sol-item rv">
+        <span class="n">06</span>
+        <div><h3 data-i18n="sol6h">碳资产开发与碳信用对接</h3><span class="who" data-i18n="sol6w">适合：出口企业、有净零承诺的企业、零碳园区</span></div>
+        <p data-i18n="sol6p">依托透明的监测、报告与核证（MRV）体系，开发高质量、永久性的碳移除信用，对接国际碳信用市场，应对 CBAM 等要求。</p>
+        <div class="proof" data-i18n="sol6f"><b>Frontier</b>代 Stripe、Shopify 预购 Captura 碳移除</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERSHIP -->
+<section class="part dark sec" id="partnership" aria-labelledby="part-t">
+  <div class="wrap part-top">
+    <div class="rv">
+      <div class="eyebrow"><b>03</b><span data-i18n="partEye">合作模式</span> <span class="en">From lab to deployment</span></div>
+      <h2 id="part-t" data-i18n="partH">把实验室成果，<br>变成你厂区里的设备。</h2>
+      <p class="lead" style="margin-top:20px" data-i18n="partLead">海浦麒是技术引进与生态整合平台：连接海外技术方、国内场景方与资本方，陪伴项目从评估走到碳资产变现。</p>
+    </div>
+
+    <div class="flow">
+      <div class="flow-step rv"><span class="k">STEP 01</span><h3 data-i18n="f1h">技术评估</h3><p data-i18n="f1p">理解你的排放结构、用海条件与能源情况。</p></div>
+      <div class="flow-step rv"><span class="k">STEP 02</span><h3 data-i18n="f2h">场景匹配</h3><p data-i18n="f2p">选定 DOC、电渗析或组合方案，测算经济性。</p></div>
+      <div class="flow-step rv"><span class="k">STEP 03</span><h3 data-i18n="f3h">中试验证</h3><p data-i18n="f3p">小规模装置现场运行，验证性能与环境影响。</p></div>
+      <div class="flow-step rv"><span class="k">STEP 04</span><h3 data-i18n="f4h">商业化部署</h3><p data-i18n="f4p">本土化设计、设备供应与工程建设。</p></div>
+      <div class="flow-step rv"><span class="k">STEP 05</span><h3 data-i18n="f5h">碳资产变现</h3><p data-i18n="f5p">MRV 核证、碳信用开发与交易对接。</p></div>
+    </div>
+
+    <div class="modes">
+      <div class="rv">
+        <h3 class="big" data-i18n="modesH">五种合作方式，<br>按你的角色选。</h3>
+      </div>
+      <ul class="mode-list rv">
+        <li><strong data-i18n="m1h">技术引进与授权</strong><span data-i18n="m1p">引入 Captura DOC 技术，在国内建设并运营捕集工厂。</span></li>
+        <li><strong data-i18n="m2h">项目共建</strong><span data-i18n="m2p">与电厂、风电、港口、园区共同投资示范项目，共享收益。</span></li>
+        <li><strong data-i18n="m3h">CO₂ 封存与利用</strong><span data-i18n="m3p">作为封存方或利用方，承接捕集到的 CO₂ 制燃料、化学品或建材。</span></li>
+        <li><strong data-i18n="m4h">设备与供应链</strong><span data-i18n="m4p">采购电渗析膜与电堆，或参与本土化制造与关键设备供应。</span></li>
+        <li><strong data-i18n="m5h">投资合作</strong><span data-i18n="m5p">与产业资本、绿色金融机构共同布局海洋碳移除赛道。</span></li>
+      </ul>
+    </div>
+
+    <div class="adv">
+      <div class="adv-card rv">
+        <span class="en">Global tech scouting</span>
+        <h3 data-i18n="a1h">全球技术雷达</h3>
+        <p data-i18n="a1p">持续跟踪欧美头部碳技术企业与前沿研究，提前判断下一代技术方向，把海外验证过的方案带进中国。</p>
+      </div>
+      <div class="adv-card rv">
+        <span class="en">Built for China</span>
+        <h3 data-i18n="a2h">本土化适配</h3>
+        <p data-i18n="a2p">针对高排放行业建立分行业方案框架，对接国内碳市场与监管规则，做模块化、可复制的部署。</p>
+      </div>
+      <div class="adv-card rv">
+        <div>
+          <span class="en">One chain, end to end</span>
+          <h3 data-i18n="a3h">技术、资本、市场一条链</h3>
+          <p data-i18n="a3p">团队兼具技术研发、绿色金融与大型能源项目管理经验，降低项目全生命周期风险。</p>
+        </div>
+        <div class="chain"><span data-i18n="c1">技术验证</span><i>→</i><span data-i18n="c2">资本落地</span><i>→</i><span data-i18n="c3">市场变现</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about dark sec" id="about" aria-labelledby="about-t">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-body rv">
+        <div class="eyebrow"><b>04</b><span data-i18n="aboutEye">关于我们</span> <span class="en">About Carbonjour</span></div>
+        <h2 id="about-t" data-i18n="aboutH">以技术为纽带，<br>与二氧化碳共存共生。</h2>
+        <p data-i18n="ab1"><strong>上海海浦麒碳科技有限公司</strong>是美国海洋碳捕集企业 Captura 在中国的唯一合作伙伴，专注于碳捕集、封存与利用（CCUS）技术的引进、本土化与产业应用。</p>
+        <p data-i18n="ab2">我们的合作涵盖技术引进、本土化适配与跨行业应用拓展：在长三角推进 DOC 中试，探索与海上风电、海洋牧场的耦合模式，并研究航运碳捕集方案。</p>
+        <p data-i18n="ab3">我们的使命是减少大气与海洋中的二氧化碳，缓解海洋酸化，推动环境保护与产业发展双赢。</p>
+
+        <div class="team">
+          <div class="eyebrow"><b>04·B</b><span data-i18n="teamEye">管理团队</span> <span class="en">Leadership</span></div>
+          <div class="team-grid">
+            <div class="member"><div class="avatar">CEO</div><div><strong data-i18n="t1h">首席执行官</strong><span data-i18n="t1p">博士，能源行业 30 余年，主持 10 余项发明专利</span></div></div>
+            <div class="member"><div class="avatar">CTO</div><div><strong data-i18n="t2h">首席技术官</strong><span data-i18n="t2p">环境科学博士，碳捕集与资源化利用，碳汇计量算法专利</span></div></div>
+            <div class="member"><div class="avatar">CFO</div><div><strong data-i18n="t3h">首席财务官</strong><span data-i18n="t3p">MBA、高级会计师，曾任世界银行等国际机构绿色金融顾问</span></div></div>
+            <div class="member"><div class="avatar">COO</div><div><strong data-i18n="t4h">首席运营官</strong><span data-i18n="t4p">碳资产管理与绿色供应链，碳业务全链条运营</span></div></div>
+            <div class="member"><div class="avatar">VP</div><div><strong data-i18n="t5h">副总裁</strong><span data-i18n="t5p">高级工程师，电力与核电领域 30 余年项目管理</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="name-card rv" data-i18n-attr="aria-label:nameLabel" aria-label="名字由来">
+        <div class="zh">海<span>浦</span>麒</div>
+        <dl>
+          <div><dt data-i18n="nc1t">音译</dt><dd data-i18n="nc1d">英文 <span class="en">capture</span>（捕获）</dd></div>
+          <div><dt data-i18n="nc2t">谐音</dt><dd data-i18n="nc2d">海捕气：从海水中捕获二氧化碳</dd></div>
+          <div><dt data-i18n="nc3t">英文名</dt><dd data-i18n="nc3d"><span class="en">Carbonjour</span>：carbon + bonjour，向低碳的每一天问好</dd></div>
+          <div><dt data-i18n="nc4t">合作伙伴</dt><dd data-i18n="nc4d">Captura · 美国加州帕萨迪纳</dd></div>
+        </dl>
+      </aside>
+    </div>
+
+    <div class="backed rv">
+      <p data-i18n="backed">Captura 技术源自加州理工学院，<br>获得以下机构支持</p>
+      <div class="logos" data-i18n-attr="aria-label:backedLabel" aria-label="Captura 的支持机构"><span>Caltech</span><span>XPRIZE</span><span>Frontier</span><span>U.S. DOE</span><span>Equinor</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section class="ins dark sec" id="insights" aria-labelledby="ins-t">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow"><b>05</b><span data-i18n="insEye">洞察</span> <span class="en">News &amp; insights</span></div>
+      <h2 id="ins-t" data-i18n="insH">最新动态</h2>
+    </div>
+    <div class="ins-grid">
+      <article class="post feature rv">
+        <div class="meta"><b data-i18n="tagCo">公司动态</b><time datetime="2025-03-24">2025.03.24</time></div>
+        <h3 data-i18n="p1h">海浦麒董事长实地考察 Captura 夏威夷千吨级海洋碳捕集试点</h3>
+        <p data-i18n="p1p">考察位于夏威夷大岛 Keāhole Point 的试点工厂，双方围绕技术经济性、生态安全与在华规模化路径展开交流。</p>
+        <div class="pic" aria-hidden="true">
+          <svg viewBox="0 0 640 320" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B4650"/><stop offset="1" stop-color="#0D2B33"/></linearGradient></defs><rect width="640" height="320" fill="url(#sky)"/><circle cx="500" cy="90" r="38" fill="#66C2AE" opacity=".25"/><path d="M0 220 C120 200 200 200 320 220 S520 240 640 220 V320 H0Z" fill="#0A2027"/><g stroke="#9DB4B3" stroke-width="2" fill="none"><rect x="210" y="150" width="120" height="62" rx="4"/><rect x="340" y="166" width="70" height="46" rx="4"/><path d="M230 150v-30h20v30M370 166v-22"/><path d="M250 181h60M250 195h60" opacity=".5"/></g><text x="24" y="296" fill="#9DB4B3" font-family="IBM Plex Sans, Arial, sans-serif" font-size="15" letter-spacing="1">Keāhole Point, Hawai‘i · 1,000 t/yr</text></svg>
+        </div>
+        <a class="more link" href="#contact" data-i18n="readMore">阅读全文 →</a>
+      </article>
+      <article class="post rv">
+        <div class="meta"><b data-i18n="tagPa">合作伙伴动态</b><time datetime="2026-08-04">2026.08.04</time></div>
+        <h3 data-i18n="p2h">商船三井、日立、日本航空联合测试直接海洋捕集技术</h3>
+        <p data-i18n="p2p">日本企业联合体研究以海水碳移除作为碳信用来源，航运与航空业开始关注 DOC。</p>
+        <a class="more link" href="#contact" data-i18n="readMore">阅读全文 →</a>
+      </article>
+      <article class="post rv">
+        <div class="meta"><b data-i18n="tagPa">合作伙伴动态</b><time datetime="2026-06-25">2026.06.25</time></div>
+        <h3 data-i18n="p3h">Captura 完成 1250 万美元 B 轮首关，电渗析平台拓展至关键矿产与工业市场</h3>
+        <p data-i18n="p3p">资金将用于扩大双极膜电渗析产能，覆盖直接提锂、碳移除与工业应用。</p>
+        <a class="more link" href="#contact" data-i18n="readMore">阅读全文 →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact dark sec" id="contact" aria-labelledby="contact-t">
+  <div class="wrap contact-grid">
+    <div class="rv">
+      <div class="eyebrow"><b>06</b><span data-i18n="ctEye">联系我们</span> <span class="en">Start a conversation</span></div>
+      <h2 id="contact-t" data-i18n="ctH">聊聊你的<br>减碳场景。</h2>
+      <p class="lead" style="margin-top:20px" data-i18n="ctLead">留下需求，我们的技术团队会在 2 个工作日内与你联系。</p>
+      <dl class="contact-info">
+        <div><dt data-i18n="ciEmail">邮箱</dt><dd><a href="mailto:djh@carbonjour.com">djh@carbonjour.com</a></dd></div>
+        <div><dt data-i18n="ciCo">公司</dt><dd data-i18n="coName">上海海浦麒碳科技有限公司</dd></div>
+        <div><dt data-i18n="ciAddr">地址</dt><dd data-i18n="addr">上海</dd></div>
+      </dl>
+    </div>
+
+    <form id="form" class="rv" novalidate>
+      <div class="f full">
+        <label><span data-i18n="fIntent">合作意向</span> <i>*</i></label>
+        <div class="chips" role="radiogroup" data-i18n-attr="aria-label:fIntent" aria-label="合作意向">
+          <label><input type="radio" name="intent" value="tech"><span data-i18n="ch1">技术引进 / 项目合作</span></label>
+          <label><input type="radio" name="intent" value="ed"><span data-i18n="ch2">电渗析产品</span></label>
+          <label><input type="radio" name="intent" value="credits"><span data-i18n="ch3">碳信用采购</span></label>
+          <label><input type="radio" name="intent" value="invest"><span data-i18n="ch4">投资合作</span></label>
+          <label><input type="radio" name="intent" value="media"><span data-i18n="ch5">媒体 / 其他</span></label>
+        </div>
+        <span class="err" data-i18n="eIntent">请选择一个合作意向</span>
+      </div>
+      <div class="f"><label for="name"><span data-i18n="fName">姓名</span> <i>*</i></label><input id="name" name="name" autocomplete="name" required><span class="err" data-i18n="eName">请填写姓名</span></div>
+      <div class="f"><label for="org" data-i18n="fOrg">单位</label><input id="org" name="org" autocomplete="organization"></div>
+      <div class="f"><label for="phone" data-i18n="fPhone">手机</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel"><span class="err" data-i18n="ePhone">手机号格式不正确</span></div>
+      <div class="f"><label for="email" data-i18n="fEmail">邮箱</label><input id="email" name="email" type="email" autocomplete="email"><span class="err" data-i18n="eEmail">请至少填写手机或邮箱，且格式正确</span></div>
+      <div class="f full"><label for="msg"><span data-i18n="fMsg">需求描述</span> <i>*</i></label><textarea id="msg" name="msg" data-i18n-attr="placeholder:fMsgPh" placeholder="例如：所在行业、设施位置、年排放量、希望了解的方向" required></textarea><span class="err" data-i18n="eMsg">请简单描述你的需求</span></div>
+      <div class="form-foot">
+        <small data-i18n="fPrivacy">提交即表示你同意我们按照《隐私政策》处理你的联系方式，仅用于回复本次咨询。</small>
+        <button class="btn btn-primary" type="submit"><span data-i18n="fSubmit">提交需求</span> <span class="arr">→</span></button>
+      </div>
+      <div class="sent" id="sent" role="status" data-i18n="fSent">已为你打开邮件，发送后我们会在 2 个工作日内回复。如果没有弹出邮件窗口，请直接发送至 djh@carbonjour.com。</div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="#top" class="brand">
+        <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#123139"/><path d="M6 21c3.2-3.2 5.4-3.2 8.6 0s5.4 3.2 8.6 0 4.6-3 5.8-1.2" stroke="#66C2AE" stroke-width="2.4" fill="none" stroke-linecap="round"/><circle cx="17" cy="11" r="3.2" fill="#F3F0E8"/></svg>
+        <span class="brand-name"><strong data-i18n="brandName">海浦麒</strong><span data-i18n="footTag">Carbonjour — Ocean heals climate</span></span>
+      </a>
+      <nav class="foot-links" data-i18n-attr="aria-label:footNav" aria-label="页脚导航">
+        <a href="#technology" data-i18n="navTech">技术</a><a href="#solutions" data-i18n="navSol">解决方案</a><a href="#partnership" data-i18n="navPart">合作模式</a><a href="#about" data-i18n="navAbout">关于我们</a><a href="#contact" data-i18n="ctEye">联系我们</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="copy">© 2026 上海海浦麒碳科技有限公司</span>
+      <span class="foot-links"><a href="#contact" data-i18n="privacy">隐私政策</a><a href="#contact" data-i18n="terms">使用条款</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var I18N_EN={
+  docTitle:"Carbonjour · Ocean heals climate",
+  docDesc:"Carbonjour (Shanghai Haipuqi Carbon Technology) is Captura's exclusive partner in China, bringing Direct Ocean Capture and bipolar membrane electrodialysis to coastal industry, offshore energy, shipping and resource companies.",
+  skip:"Skip to content",brandHome:"Carbonjour home",brandName:"Carbonjour",brandSub:"海浦麒",navLabel:"Main navigation",
+  navTech:"Technology",navSol:"Solutions",navPart:"Partnership",navAbout:"About",navIns:"Insights",
+  ctaBook:"Book a technical call",menuOpen:"Open menu",menuClose:"Close menu",
+  heroTag:"Captura's exclusive partner in China",
+  heroH1:"Let the ocean<br>breathe for the planet.",
+  heroH1Sub:"让海洋疗愈气候",
+  heroLead:"The ocean absorbs roughly a third of humanity's CO₂ emissions every year. We bring Caltech-born Direct Ocean Capture (DOC) and bipolar membrane electrodialysis to China, helping coastal industry, offshore energy and shipping remove carbon at scale with nothing but seawater and clean power.",
+  heroLink:"See how it works",
+  heroAside:"Our Chinese name, 海浦麒 (Hǎi-pǔ-qí), is a transliteration of <span class=\"en\">capture</span>. It also sounds like 海捕气, “catching gas from the sea”.",
+  stat1:"By volume, CO₂ is about 150 times more concentrated in seawater than in air",
+  unitTpy:"t/yr",unitAdd:"additives",
+  stat2:"Third-generation pilot in Hawai‘i, built with Equinor, operating since 2025",
+  stat3:"Seawater and renewable electricity only. Nothing added to the ocean, no by-products",
+  stat4:"Proprietary electrodialysis delivers up to 10 times the performance of leading alternatives",
+  whyEye:"Why the ocean",whyH:"Earth's largest carbon sink<br>is already working for us.",
+  whyQuote:"The ocean and the atmosphere stay in balance. <em>Take CO₂ out of surface seawater, and the ocean draws the same amount back from the air.</em> Direct Ocean Capture simply amplifies that natural cycle.",
+  why1:"of Earth's surface is ocean. Deployment needs almost no land and no fresh water.",
+  why2:"of human CO₂ emissions end up in the ocean, at the cost of steady acidification.",
+  why3:"inputs are all the system needs: seawater and renewable electricity.",
+  techEye:"Technology",techH:"Four steps to draw<br>carbon from the sea.",
+  techLead:"At the core is Captura's bipolar membrane electrodialysis (BPMED), which uses electricity to split the salt in seawater into acid and base. No chemicals are added.",
+  s1h:"Draw a little seawater",s1p:"A small share of seawater is pre-treated and fed in. Existing intakes at power or desalination plants can be reused.",
+  s2h:"Make acid and base",s2p:"Renewable power drives the bipolar membrane stack, splitting seawater salt into an acid stream and a base stream.",
+  s3h:"Release and capture CO₂",s3p:"The acid turns dissolved inorganic carbon into CO₂ gas, which is separated into a high-purity, measurable stream.",
+  s4h:"Return the water",s4p:"The base restores the water's pH before it goes back to sea, where it pulls an equal amount of CO₂ from the atmosphere.",
+  o1t:"Store",o1h:"Permanent geological storage",o1p:"Partners with experienced storage providers lock CO₂ away for thousands of years, producing verifiable carbon removal.",
+  o2t:"Use",o2h:"Sustainable fuels and materials",o2p:"CO₂ can become synthetic fuel for aviation and shipping, or low-carbon plastics, chemicals and building materials.",
+  edEye:"Platform technology",edH:"One membrane, far beyond carbon removal.",
+  edP:"Captura manufactures bipolar membranes (BPM), cation exchange membranes (CEM) and electrodialysis stacks at its plant in Pasadena, California. The PFAS-free membranes run close to the thermodynamic voltage limit even at high current density, with degradation below 10 µV/h, supporting multi-year lifetimes.",
+  edBig:"performance, lower energy and capex",
+  ed1:"Direct lithium extraction",ed2:"Desalination brine valorization",ed3:"Industrial wastewater valorization",ed4:"Long-duration energy storage",ed5:"Electrochemical carbon capture",ed6:"Turn-key systems",
+  tlEye:"Milestones · scaled 1,000× in three years",
+  tl1s:"1 t/yr",tl1p:"First system at Caltech's Kerckhoff Marine Laboratory",
+  tl2s:"100 t/yr",tl2p:"Second generation at AltaSea, Port of Los Angeles",
+  tl3s:"1,000 t/yr",tl3p:"Third-generation pilot at Hawai‘i Ocean Science & Technology Park, with Equinor",
+  tl4y:"In progress",tl4s:"China",tl4p:"Carbonjour is advancing a DOC pilot in the Yangtze River Delta, coupled with offshore wind and marine ranching",
+  tl5y:"Long term",tl5s:"Megaton scale",tl5p:"Standalone removal platforms powered by offshore renewables",
+  solEye:"Solutions",solH:"Start from the infrastructure you already have.",
+  solLead:"Early deployments reuse existing ocean infrastructure, which means lower capital cost and faster delivery.",
+  sol1h:"Coastal power · desalination · ports",sol1w:"For: seawater-cooled power plants, desalination plants, LNG terminals, port operators",
+  sol1p:"Co-locate DOC units with existing intake and outfall systems, skip new water works, and turn current assets into carbon removal assets.",
+  sol1f:"<b>Co-location</b>Captura's early commercial pathway",
+  sol2h:"Offshore wind · retired oil & gas platforms",sol2w:"For: offshore wind developers, offshore oil & gas operators",
+  sol2p:"Run capture on curtailed or off-peak green power to lift utilization, and convert retired platforms into removal facilities.",
+  sol2f:"<b>Flexible load</b>Runs on off-peak renewables",
+  sol3h:"Shipping decarbonization and removal purchases",sol3w:"For: shipowners, shipping lines, port groups",
+  sol3p:"Carbon removal purchases plus on-board and port capture studies, aimed at IMO carbon intensity rules and EU shipping carbon costs.",
+  sol3f:"<b>30,000 t</b>removal credits purchased from Captura by Mitsui O.S.K. Lines",
+  sol4h:"Lithium brines · brine and wastewater valorization",sol4w:"For: lithium producers, chemical parks, water utilities, energy storage companies",
+  sol4p:"Bipolar membranes and electrodialysis stacks supplied directly, or full systems tailored to your process: make acid and base on site, recover resources, cut reagent costs.",
+  sol4f:"<b>Electrodialysis products</b>Membranes, stacks, turn-key systems",
+  sol5h:"Marine ranching and aquaculture<span class=\"flag\">Under study</span>",sol5w:"For: marine ranches, nearshore aquaculture, coastal governments",
+  sol5p:"Water leaving a DOC plant is lower in CO₂ and slightly less acidic, which could ease local acidification in bays and other semi-enclosed waters. Being evaluated with third-party experts.",
+  sol5f:"<b>Co-benefit</b>Carbon removal + ocean health",
+  sol6h:"Carbon asset development and credits",sol6w:"For: exporters, companies with net-zero commitments, zero-carbon parks",
+  sol6p:"Built on transparent monitoring, reporting and verification (MRV), we develop high-quality, durable removal credits, connect them to international markets, and help you respond to CBAM and similar rules.",
+  sol6f:"<b>Frontier</b>pre-purchased Captura removal for Stripe and Shopify",
+  partEye:"Partnership",partH:"From the lab<br>to your site.",
+  partLead:"Carbonjour is a technology transfer and ecosystem platform. We connect overseas technology owners, Chinese project hosts and capital, and stay with each project from assessment to carbon revenue.",
+  f1h:"Assessment",f1p:"Understand your emissions, marine conditions and energy supply.",
+  f2h:"Scenario fit",f2p:"Choose DOC, electrodialysis or both, and model the economics.",
+  f3h:"Pilot",f3p:"Run a small unit on site to verify performance and environmental impact.",
+  f4h:"Commercial build",f4p:"Localized design, equipment supply and construction.",
+  f5h:"Carbon revenue",f5p:"MRV, credit issuance and access to buyers.",
+  modesH:"Five ways<br>to work with us.",
+  m1h:"Technology licensing",m1p:"Bring Captura's DOC technology to China and build and operate capture plants.",
+  m2h:"Joint projects",m2p:"Co-invest in demonstration projects with power plants, wind farms, ports or industrial parks, and share the returns.",
+  m3h:"CO₂ storage and use",m3p:"Take the captured CO₂ as a storage provider or turn it into fuels, chemicals or building materials.",
+  m4h:"Equipment and supply chain",m4p:"Buy electrodialysis membranes and stacks, or join localized manufacturing and key equipment supply.",
+  m5h:"Investment",m5p:"Build a position in ocean carbon removal alongside industrial capital and green finance.",
+  a1h:"Global technology radar",a1p:"We track leading carbon technology companies and research in the US and Europe, spot the next generation early, and bring proven solutions into China.",
+  a2h:"Adapted for China",a2p:"Sector-specific frameworks for heavy emitters, aligned with China's carbon market and regulations, deployed in modular, repeatable units.",
+  a3h:"Technology, capital and market in one chain",a3p:"Our team combines R&D, green finance and large energy project management, lowering risk across the project lifecycle.",
+  c1:"Technology validation",c2:"Capital deployment",c3:"Market revenue",
+  aboutEye:"About us",aboutH:"Technology as the bridge<br>between people and carbon.",
+  ab1:"<strong>Shanghai Haipuqi Carbon Technology Co., Ltd. (Carbonjour)</strong> is the exclusive partner in China of Captura, the US ocean carbon capture company. We focus on bringing carbon capture, utilization and storage (CCUS) technology to China, adapting it locally, and putting it to work in industry.",
+  ab2:"Our work spans technology transfer, local adaptation and new cross-sector applications: advancing a DOC pilot in the Yangtze River Delta, exploring pairings with offshore wind and marine ranching, and studying carbon capture for shipping.",
+  ab3:"Our mission is to reduce CO₂ in the air and the ocean, ease ocean acidification, and show that environmental protection and industrial growth can go together.",
+  teamEye:"Leadership",
+  t1h:"Chief Executive Officer",t1p:"PhD; 30+ years in energy; lead inventor on 10+ patents",
+  t2h:"Chief Technology Officer",t2p:"PhD in environmental science; carbon capture and utilization; patents in carbon sink accounting",
+  t3h:"Chief Financial Officer",t3p:"MBA, senior accountant; former green finance adviser to the World Bank and other institutions",
+  t4h:"Chief Operating Officer",t4p:"Carbon asset management and green supply chains; end-to-end carbon business operations",
+  t5h:"Vice President",t5p:"Senior engineer; 30+ years managing power and nuclear projects",
+  nameLabel:"The story behind our name",
+  nc1t:"Sound",nc1d:"A transliteration of <span class=\"en\">capture</span>",
+  nc2t:"Wordplay",nc2d:"Sounds like 海捕气: catching CO₂ from the sea",
+  nc3t:"English name",nc3d:"<span class=\"en\">Carbonjour</span>: carbon + bonjour, a hello to every low-carbon day",
+  nc4t:"Partner",nc4d:"Captura · Pasadena, California",
+  backed:"Captura's technology was invented at Caltech<br>and is backed by",backedLabel:"Organizations supporting Captura",
+  insEye:"Insights",insH:"Latest news",tagCo:"Company news",tagPa:"Partner news",readMore:"Read more →",
+  p1h:"Carbonjour's chairman visits Captura's 1,000-ton ocean capture pilot in Hawai‘i",
+  p1p:"A site visit to the pilot plant at Keāhole Point on Hawai‘i Island, with discussions on economics, ecological safety and the path to scale in China.",
+  p2h:"Mitsui O.S.K. Lines, Hitachi and Japan Airlines to test Direct Ocean Capture",
+  p2p:"A Japanese consortium is studying seawater carbon removal as a source of credits, as shipping and aviation turn to DOC.",
+  p3h:"Captura raises $12.5M in Series B first close to expand its electrodialysis platform",
+  p3p:"The funding scales bipolar membrane electrodialysis production across lithium extraction, carbon removal and industrial markets.",
+  ctEye:"Contact",ctH:"Tell us about<br>your carbon challenge.",
+  ctLead:"Share your needs and our technical team will reply within two business days.",
+  ciEmail:"Email",ciCo:"Company",ciAddr:"Address",coName:"Shanghai Haipuqi Carbon Technology Co., Ltd.",addr:"Shanghai, China",
+  fIntent:"What are you interested in",ch1:"Technology / joint projects",ch2:"Electrodialysis products",ch3:"Buying carbon removal",ch4:"Investment",ch5:"Media / other",
+  eIntent:"Please choose one option",fName:"Name",eName:"Please enter your name",fOrg:"Organization",
+  fPhone:"Phone",ePhone:"Please enter a valid phone number",fEmail:"Email",eEmail:"Please give a phone number or a valid email",
+  fMsg:"What do you need",fMsgPh:"e.g. your industry, site location, annual emissions, what you want to explore",eMsg:"Please describe your needs briefly",
+  fPrivacy:"By submitting, you agree that we use your contact details under our Privacy Policy, only to reply to this inquiry.",
+  fSubmit:"Send",fSent:"Your email app should now be open. Once you send it, we will reply within two business days. If no window appeared, write to djh@carbonjour.com.",
+  footNav:"Footer navigation",footTag:"海浦麒 — Ocean heals climate",
+  copy:"© 2026 Shanghai Haipuqi Carbon Technology Co., Ltd.",
+  privacy:"Privacy policy",terms:"Terms of use"
+};
+
+document.documentElement.classList.add('js');
+(function(){
+  var nav=document.getElementById('nav'),burger=document.getElementById('burger'),menu=document.getElementById('menu');
+
+  // ---- i18n ----
+  var metaDesc=document.querySelector('meta[name=description]');
+  var zh={docTitle:document.title,docDesc:metaDesc?metaDesc.content:'',menuOpen:'打开菜单',menuClose:'关闭菜单'};
+  var textEls=[].slice.call(document.querySelectorAll('[data-i18n]'));
+  var attrEls=[].slice.call(document.querySelectorAll('[data-i18n-attr]'));
+  textEls.forEach(function(el){var k=el.getAttribute('data-i18n');if(!(k in zh))zh[k]=el.innerHTML});
+  attrEls.forEach(function(el){el.getAttribute('data-i18n-attr').split(';').forEach(function(p){var kv=p.split(':');if(!(kv[1] in zh))zh[kv[1]]=el.getAttribute(kv[0])})});
+  var lang='zh';
+  function t(k){return (lang==='en'?I18N_EN:zh)[k]}
+  function setLang(l,push){
+    lang=l==='en'?'en':'zh';
+    document.documentElement.lang=lang==='en'?'en':'zh-CN';document.documentElement.setAttribute('data-lang',lang);
+    textEls.forEach(function(el){var v=t(el.getAttribute('data-i18n'));if(v!=null)el.innerHTML=v});
+    attrEls.forEach(function(el){el.getAttribute('data-i18n-attr').split(';').forEach(function(p){var kv=p.split(':');var v=t(kv[1]);if(v!=null)el.setAttribute(kv[0],v)})});
+    document.title=t('docTitle');
+    if(metaDesc)metaDesc.content=t('docDesc');
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-lang')===lang)});
+    burger.setAttribute('aria-label',t(nav.classList.contains('open')?'menuClose':'menuOpen'));
+    try{localStorage.setItem('cj-lang',lang)}catch(e){}
+    if(push){var u=new URL(location.href);if(lang==='en')u.searchParams.set('lang','en');else u.searchParams.delete('lang');try{history.replaceState(null,'',u)}catch(e){}}
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.getAttribute('data-lang'),true)})});
+  var initial=location.hash==='#en'?'en':new URLSearchParams(location.search).get('lang');
+  if(!initial){try{initial=localStorage.getItem('cj-lang')}catch(e){}}
+  if(!initial&&navigator.language&&!/^zh/i.test(navigator.language))initial='en';
+  setLang(initial==='en'?'en':'zh',false);
+
+  // ---- nav ----
+  var darkSecs=[].slice.call(document.querySelectorAll('.dark,.stats'));
+  function onScroll(){
+    nav.classList.toggle('scrolled',window.scrollY>40);
+    var over=darkSecs.some(function(s){var r=s.getBoundingClientRect();return r.top<=72&&r.bottom>72});
+    nav.classList.toggle('on-deep',over);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+  burger.addEventListener('click',function(){
+    var o=nav.classList.toggle('open');burger.setAttribute('aria-expanded',o);burger.setAttribute('aria-label',t(o?'menuClose':'menuOpen'));
+  });
+  menu.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');burger.setAttribute('aria-expanded','false');burger.setAttribute('aria-label',t('menuOpen'))}});
+
+  // active section + reveal
+  var links={};[].forEach.call(menu.querySelectorAll('a'),function(a){links[a.getAttribute('href').slice(1)]=a});
+  if('IntersectionObserver' in window){
+    var so=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){for(var k in links)links[k].classList.toggle('active',k===e.target.id)}
+    })},{rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(links).forEach(function(id){var s=document.getElementById(id);if(s)so.observe(s)});
+
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}
+    })},{rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){
+      var sib=[].slice.call(el.parentNode.children).filter(function(c){return c.classList.contains('rv')});
+      el.style.transitionDelay=(Math.min(sib.indexOf(el),5)*70)+'ms';
+      ro.observe(el);
+    });
+  }else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')})}
+
+  // ---- form ----
+  var form=document.getElementById('form');
+  function field(id){return document.getElementById(id).closest('.f')}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var ok=true;
+    form.querySelectorAll('.f').forEach(function(f){f.classList.remove('invalid')});
+    if(!form.querySelector('input[name=intent]:checked')){form.querySelector('.chips').closest('.f').classList.add('invalid');ok=false}
+    if(!document.getElementById('name').value.trim()){field('name').classList.add('invalid');ok=false}
+    var ph=document.getElementById('phone').value.trim(),em=document.getElementById('email').value.trim();
+    // 中文版校验大陆手机号；英文版放宽为国际号码
+    var phOk=lang==='en'?/^\+?[\d\s()-]{6,20}$/.test(ph):/^(\+?86)?1[3-9]\d{9}$/.test(ph.replace(/[\s-]/g,''));
+    if(ph&&!phOk){field('phone').classList.add('invalid');ok=false}
+    if((!ph&&!em)||(em&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em))){field('email').classList.add('invalid');ok=false}
+    if(!document.getElementById('msg').value.trim()){field('msg').classList.add('invalid');ok=false}
+    if(!ok){var first=form.querySelector('.invalid input,.invalid textarea');if(first)first.focus();return}
+    // 暂无后端：调用访客的邮件客户端，发送到公司邮箱
+    var intentLabel=form.querySelector('input[name=intent]:checked').nextElementSibling.textContent;
+    var lines=[
+      t('fIntent')+': '+intentLabel,
+      t('fName')+': '+document.getElementById('name').value.trim(),
+      t('fOrg')+': '+document.getElementById('org').value.trim(),
+      t('fPhone')+': '+ph,
+      t('fEmail')+': '+em,
+      '',
+      document.getElementById('msg').value.trim()
+    ];
+    var subject=(lang==='en'?'Website inquiry: ':'官网咨询：')+intentLabel;
+    location.href='mailto:djh@carbonjour.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'));
+    document.getElementById('sent').classList.add('show');
+  });
+})();
+</script>
+</body>
+</html>
