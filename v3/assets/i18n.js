@@ -185,3 +185,5 @@ Object.assign(I18N_EN,{
 
 // ---- v3 additions ----
 Object.assign(I18N_EN,{menuLabel:"Menu",footNavH:"Site",footMoreH:"More"});
+
+Object.assign(I18N_EN,{carPrev:"Previous",carNext:"Next"});

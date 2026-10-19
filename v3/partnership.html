@@ -39,6 +39,13 @@
       <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="17" fill="currentColor"/><path d="M6 20c3.2-3.2 5.4-3.2 8.6 0s5.4 3.2 8.6 0 4.6-3 5.8-1.2" stroke="#1C524D" stroke-width="2.6" fill="none" stroke-linecap="round"/><circle cx="17" cy="11.5" r="3.2" fill="#CDE98C"/></svg>
       <span class="brand-name"><strong data-i18n="brandName">海浦麒</strong><span data-i18n="brandSub">Carbonjour</span></span>
     </a>
+    <nav class="top-nav" aria-label="主导航" data-i18n-attr="aria-label:navLabel"><ul>
+      <li><a href="technology.html" data-nav="technology" data-i18n="navTech">技术</a></li>
+      <li><a href="solutions.html" data-nav="solutions" data-i18n="navSol">解决方案</a></li>
+      <li><a href="partnership.html" data-nav="partnership" aria-current="page" data-i18n="navPart">合作模式</a></li>
+      <li><a href="about.html" data-nav="about" data-i18n="navAbout">关于我们</a></li>
+      <li><a href="news.html" data-nav="news" data-i18n="navNews">动态</a></li>
+    </ul></nav>
     <div class="bar-right">
       <div class="lang" role="group" aria-label="Language / 语言">
         <button type="button" data-lang="zh" aria-pressed="true" lang="zh-CN"><span>中</span></button>
@@ -56,7 +63,7 @@
       <li><a href="index.html" data-nav="home" data-i18n="crumbHome">首页</a></li>
       <li><a href="technology.html" data-nav="technology" data-i18n="navTech">技术</a></li>
       <li><a href="solutions.html" data-nav="solutions" data-i18n="navSol">解决方案</a></li>
-      <li><a href="partnership.html" data-nav="partnership" class="active" aria-current="page" data-i18n="navPart">合作模式</a></li>
+      <li><a href="partnership.html" data-nav="partnership" aria-current="page" data-i18n="navPart">合作模式</a></li>
       <li><a href="about.html" data-nav="about" data-i18n="navAbout">关于我们</a></li>
       <li><a href="news.html" data-nav="news" data-i18n="navNews">动态</a></li>
       <li><a href="contact.html" data-nav="contact" data-i18n="ctEye">联系我们</a></li>
@@ -95,13 +102,13 @@
       <li><span class="k">STEP 05</span><h3 data-i18n="f5h">碳资产变现</h3><p data-i18n="f5p">MRV 核证、碳信用开发与交易对接。</p></li>
     </ol>
     <div class="head" style="margin-top:clamp(72px,9vw,120px);margin-bottom:28px"><h2 class="h2" data-i18n="modesH">五种合作方式，<br>按你的角色选</h2></div>
-    <ul class="modes">
-      <li><strong data-i18n="m1h">技术引进与授权</strong><span data-i18n="m1p">引入 Captura DOC 技术，在国内建设并运营捕集工厂。</span></li>
-      <li><strong data-i18n="m2h">项目共建</strong><span data-i18n="m2p">与电厂、风电、港口、园区共同投资示范项目，共享收益。</span></li>
-      <li><strong data-i18n="m3h">CO₂ 封存与利用</strong><span data-i18n="m3p">作为封存方或利用方，承接捕集到的 CO₂。</span></li>
-      <li><strong data-i18n="m4h">设备与供应链</strong><span data-i18n="m4p">采购电渗析膜与电堆，或参与本土化制造。</span></li>
-      <li><strong data-i18n="m5h">投资合作</strong><span data-i18n="m5p">与产业资本、绿色金融机构共同布局海洋碳移除。</span></li>
-    </ul>
+    <div class="accordion">
+      <details><summary data-i18n="m1h">技术引进与授权</summary><p data-i18n="m1p">引入 Captura DOC 技术，在国内建设并运营捕集工厂。</p></details>
+      <details><summary data-i18n="m2h">项目共建</summary><p data-i18n="m2p">与电厂、风电、港口、园区共同投资示范项目，共享收益。</p></details>
+      <details><summary data-i18n="m3h">CO₂ 封存与利用</summary><p data-i18n="m3p">作为封存方或利用方，承接捕集到的 CO₂。</p></details>
+      <details><summary data-i18n="m4h">设备与供应链</summary><p data-i18n="m4p">采购电渗析膜与电堆，或参与本土化制造。</p></details>
+      <details><summary data-i18n="m5h">投资合作</summary><p data-i18n="m5p">与产业资本、绿色金融机构共同布局海洋碳移除。</p></details>
+    </div>
   </div>
 </section>
 
@@ -120,7 +127,7 @@
 
 <!-- CTA -->
 <section class="band sec cta" aria-labelledby="cta-t">
-  <img class="bg" src="img/sea-texture.jpg" width="1800" height="1200" alt="" loading="lazy">
+  <video class="bg bg-video" autoplay muted loop playsinline preload="metadata" poster="img/wind.jpg" aria-hidden="true"><source src="media/wind-farm.mp4" type="video/mp4"></video>
   <div class="wrap">
     <span class="kicker"><span data-i18n="ctaEye">下一步</span><span class="en">Next step</span></span>
     <h2 id="cta-t" data-i18n="ctaH">聊聊你的减碳场景</h2>

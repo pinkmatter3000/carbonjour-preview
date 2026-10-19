@@ -211,7 +211,9 @@ html[data-lang=en] .statement{font-family:var(--latin);letter-spacing:-.03em}
 .chips.dark span{border-color:var(--line);color:var(--ink-2)}
 
 /* ---------- process diagram on graph paper (Spade) ---------- */
-.paper-grid{background-color:var(--paper);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:44px 44px;background-position:-1px -1px}
+/* graph paper fades in and out so the section blends into the page */
+.paper-grid{position:relative;background:var(--paper);isolation:isolate}
+.paper-grid::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:44px 44px;background-position:center top;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 22%,#000 70%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 22%,#000 70%,transparent 100%)}
 .diagram{background:var(--card);border-radius:var(--r-lg);padding:clamp(16px,2.4vw,30px);border:1px solid var(--line);box-shadow:0 30px 60px -40px rgba(15,36,34,.45)}
 .diagram-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .diagram svg{display:block;width:100%;height:auto;min-width:620px}
@@ -490,3 +492,60 @@ footer{background:var(--sea);color:var(--on-sea-2);font-size:14px;padding-top:cl
 .hero-bg::after,.band .bg+*::before{content:"";position:absolute;inset:0;background:#0F3634;mix-blend-mode:color;opacity:.38}
 @media (max-width:900px) and (min-width:601px){.bento > .span-5,.bento > .span-7{grid-column:span 6}}
 .contact-grid .lead{margin-top:18px}
+
+/* ===== v3 refinements ===== */
+/* desktop: page links in the bar; the full-screen menu is for phones */
+.top-nav ul{display:flex;gap:2px;list-style:none}
+.top-nav a{position:relative;display:block;padding:8px 14px;font-size:15px;font-weight:500;opacity:.82;transition:opacity .2s}
+.top-nav a:hover{opacity:1}
+.top-nav a[aria-current="page"]{opacity:1}
+.top-nav a[aria-current="page"]::after{content:"";position:absolute;left:50%;bottom:0;width:5px;height:5px;margin-left:-2.5px;border-radius:50%;background:currentColor}
+@media (min-width:901px){.menu-btn{display:none}}
+@media (max-width:900px){.top-nav{display:none}}
+@media (max-width:1180px) and (min-width:901px){.top-nav a{padding:8px 10px;font-size:14px}.bar-cta{display:none}}
+
+/* scenarios carousel (Square) */
+.car-btns{display:flex;gap:8px}
+.car-btns button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--card);cursor:pointer;font-family:var(--latin);font-size:18px;color:var(--ink);transition:background .2s,border-color .2s,opacity .2s}
+.car-btns button:hover{border-color:var(--ink)}
+.car-btns button:disabled{opacity:.35;cursor:default}
+.scen-track{display:grid;grid-auto-flow:column;grid-auto-columns:min(380px,82vw);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px max(var(--gutter),env(safe-area-inset-left,0px)) 18px;scroll-padding-left:max(var(--gutter),env(safe-area-inset-left,0px));scrollbar-width:none}
+.scen-track::-webkit-scrollbar{display:none}
+.scen-track .scen{scroll-snap-align:start}
+.car-row{display:flex;align-items:center;gap:20px;justify-self:end}
+
+/* accordion on the dark partnership band (Square) */
+.accordion{border-top:1px solid var(--line-light)}
+.accordion details{border-bottom:1px solid var(--line-light)}
+.accordion summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;cursor:pointer;font-size:clamp(19px,1.8vw,24px);font-weight:500}
+.accordion summary::-webkit-details-marker{display:none}
+.accordion summary::after{content:"+";flex:none;font-family:var(--latin);font-size:28px;font-weight:300;line-height:1;color:var(--lime);transition:transform .3s var(--ease)}
+.accordion details[open] summary::after{transform:rotate(45deg)}
+.accordion details p{padding:0 0 24px;color:var(--on-sea-2);max-width:44em}
+
+/* figure captions (GIC) */
+.fig-cap{display:flex;gap:12px;align-items:baseline}
+.fig-cap b{font-family:var(--mono);font-weight:500;color:var(--ink);letter-spacing:.04em}
+
+@media (prefers-reduced-motion:reduce){.scen-track{scroll-behavior:auto}}
+/* legend sits inside the diagram card, aligned with the drawing */
+.diagram .legend{font-size:13px;gap:6px 20px;padding:2px 2px 14px;margin-bottom:14px;border-bottom:1px solid var(--line);color:var(--ink-2)}
+.diagram .legend i{width:16px;height:5px}
+.diagram-scroll{border-radius:var(--r-md);scrollbar-width:thin;scrollbar-color:rgba(15,36,34,.25) transparent}
+.diagram-scroll::-webkit-scrollbar{height:6px}
+.diagram-scroll::-webkit-scrollbar-thumb{background:rgba(15,36,34,.25);border-radius:3px}
+.diagram-scroll::-webkit-scrollbar-button{display:none}
+.fig-cap b{white-space:nowrap;flex:none}
+
+/* ===== motion & video ===== */
+.bg-video{width:100%;height:100%;object-fit:cover;display:block}
+.hero-bg video{transform:scale(1.06);animation:settle 2.6s var(--ease) forwards}
+.band video.bg{opacity:.5}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+img.px{transform:translateY(var(--py,0)) scale(1.12);transition:none;will-change:transform}
+a:hover img.px,.ph:hover img.px,.prod:hover > img.px{transform:translateY(var(--py,0)) scale(1.14)}
+.glass .count{display:flex;align-items:baseline;gap:8px;margin-top:14px}
+.glass .count .num{font-family:var(--latin);font-weight:500;font-size:clamp(48px,6vw,84px);line-height:1;letter-spacing:-.04em;color:var(--lime);font-variant-numeric:tabular-nums}
+.glass .count small{font-size:15px;color:rgba(238,242,236,.8)}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero-bg video{animation:none;transform:none}img.px{transform:none}}

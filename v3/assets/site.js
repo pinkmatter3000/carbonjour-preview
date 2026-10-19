@@ -66,6 +66,49 @@
     window.addEventListener('scroll',tick,{passive:true});tick();
   }else{lineEls.forEach(function(s){s.classList.add('on')})}
 
+  // ---- motion: scroll reveals, parallax photos, count-up, background video ----
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var videos=[].slice.call(document.querySelectorAll('video.bg-video'));
+  if(reduce){videos.forEach(function(v){v.removeAttribute('autoplay');v.pause()})}
+  if('IntersectionObserver' in window&&!reduce){
+    // pause background videos while off-screen
+    var vo=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var p=e.target.play();if(p&&p.catch)p.catch(function(){})}else e.target.pause()})},{threshold:0.05});
+    videos.forEach(function(v){vo.observe(v)});
+    // reveal cards and headings as they enter; anything already on screen shows at once
+    var sel='.head,.statement,.prod,.scen,.glass,.post,.row,.step,.timeline li,.member,.news-item,.split > *,.flow-steps li,.adv .tile,.visit-grid figure,.diagram,.cta .wrap > *';
+    var items=[].slice.call(document.querySelectorAll(sel)).filter(function(el){return !el.closest('.menu')});
+    var ro=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    items.forEach(function(el){
+      var r=el.getBoundingClientRect();
+      if(r.top<innerHeight)return;
+      var sibs=[].slice.call(el.parentNode.children);
+      el.style.setProperty('--d',Math.min(sibs.indexOf(el),5)*0.08+'s');
+      el.classList.add('rv');ro.observe(el);
+    });
+    // count-up numbers
+    var co=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;co.unobserve(e.target);var el=e.target,end=+el.getAttribute('data-count'),t0=null;
+      function f(ts){if(!t0)t0=ts;var k=Math.min(1,(ts-t0)/1600),v=Math.round(end*(1-Math.pow(1-k,3)));el.textContent=v.toLocaleString('en-US');if(k<1)requestAnimationFrame(f)}
+      el.textContent='0';requestAnimationFrame(f)})},{threshold:0.6});
+    [].forEach.call(document.querySelectorAll('[data-count]'),function(el){co.observe(el)});
+    // gentle parallax on large photos
+    var px=[].slice.call(document.querySelectorAll('.prod > img,.witness .stage img,.page-hero .ph img'));
+    px.forEach(function(img){img.classList.add('px')});
+    var ticking=false;
+    function para(){ticking=false;var mid=innerHeight/2;px.forEach(function(img){var r=img.parentNode.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;var off=(r.top+r.height/2-mid)*-0.08;img.style.setProperty('--py',off.toFixed(1)+'px')})}
+    window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(para)}},{passive:true});para();
+  }
+
+  // ---- carousels: arrow buttons scroll by one card ----
+  [].forEach.call(document.querySelectorAll('[data-carousel]'),function(sec){
+    var track=sec.querySelector('.scen-track'),prev=sec.querySelector('[data-prev]'),next=sec.querySelector('[data-next]');
+    if(!track||!prev||!next)return;
+    function step(){var c=track.firstElementChild;return c?c.getBoundingClientRect().width+16:320}
+    function sync(){prev.disabled=track.scrollLeft<4;next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-4}
+    prev.addEventListener('click',function(){track.scrollBy({left:-step(),behavior:'smooth'})});
+    next.addEventListener('click',function(){track.scrollBy({left:step(),behavior:'smooth'})});
+    track.addEventListener('scroll',sync,{passive:true});window.addEventListener('resize',sync);sync();
+  });
+
   // ---- contact form: no backend yet, compose an email to the company ----
   var form=document.getElementById('form');
   if(!form)return;

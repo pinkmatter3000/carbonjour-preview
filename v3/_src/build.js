@@ -103,7 +103,7 @@ for (const file of fs.readdirSync(path.join(src, 'pages')).filter(f => f.endsWit
     .replace('{{body}}', body);
 
   // mark the current page in the main nav
-  html = html.replace(`data-nav="${meta.page}"`, `data-nav="${meta.page}" class="active" aria-current="page"`);
+  html = html.split(`data-nav="${meta.page}"`).join(`data-nav="${meta.page}" aria-current="page"`);
   html = addImageSizes(html);
 
   fs.writeFileSync(path.join(out, file), html);
