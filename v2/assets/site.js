@@ -41,6 +41,7 @@
     var overDeep=deepSecs.some(function(s){var r=s.getBoundingClientRect();return r.top<=y&&r.bottom>y});
     nav.classList.toggle('on-deep',!overHero&&overDeep);
     nav.classList.toggle('solid',!overHero&&!overDeep);
+    nav.classList.toggle('glass',overHero&&window.scrollY>8);
   }
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 

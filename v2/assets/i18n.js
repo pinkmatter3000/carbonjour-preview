@@ -161,3 +161,24 @@ Object.assign(I18N_EN,{
   nl2h:"Captura and ElectraLith partner to commercialize next-generation lithium extraction",nl2p:"Bipolar membrane electrodialysis moves into critical minerals.",
   nlRead:"Read →"
 });
+
+// ---- diagrams and galleries ----
+Object.assign(I18N_EN,{
+  dgEye:"Process diagram",dgH:"What happens inside one system",dgLegend:"Legend",
+  dgLgSea:"Seawater",dgLgAcid:"Acid",dgLgBase:"Base",dgLgPower:"Renewable power",
+  dgTitle:"Direct Ocean Capture process diagram",
+  dgDesc:"Seawater enters through an intake and is pre-treated. Bipolar membrane electrodialysis, powered by renewable electricity, splits it into acid and base. The acidified water releases CO₂, which is captured for storage or use. The base restores the water's pH before it returns to the sea, where the decarbonized water draws an equal amount of CO₂ from the air.",
+  dgAir:"Atmospheric CO₂",dgStore:"Storage or use",dgPower:"Renewable power",dgAcid:"Acid",dgBase:"Base",dgMix:"Restore pH",
+  dgIntake:"Intake",dgReturn:"Low-CO₂ water returns",
+  dgCap:"Schematic, not to scale. Real plants can share intakes and outfalls with power or desalination plants.",
+  edgTitle:"Bipolar membrane electrodialysis cell",
+  edgDesc:"Under an electric field the bipolar membrane splits water into hydrogen and hydroxide ions. Hydrogen ions enter the acid chamber and hydroxide ions the base chamber, while sodium ions cross the cation exchange membrane into the base chamber, giving acid on one side and base on the other.",
+  edgAcid:"Acid chamber",edgBase:"Base chamber",edgIn1:"Seawater",edgIn2:"Loop solution",
+  edgOut1:"Acidified water → CO₂ capture",edgOut2:"Base → restore pH",
+  edgCap:"BPM: bipolar membrane, splits water into H⁺ and OH⁻. CEM: cation exchange membrane, lets only cations through. A full stack is many of these cells side by side.",
+  galEye:"In the field",galH:"From the pilot plant to the membrane line",galHint:"Scroll sideways for more",galLabel:"Field photos",
+  altG1:"Aerial view of the Hawaii pilot plant, with pre-treatment tanks and electrodialysis containers",altG2:"Aerial view of the coastline at the Hawaii Ocean Science & Technology Park",altG3:"A Captura equipment container on site",altG4:"Engineers checking process lines on site",altG5:"Captura's pilot barge at the dock",
+  gc1:"Aerial view of the Hawaii pilot",gc2:"Coastline at HOST Park, Hawaii",gc3:"Modular equipment container",gc4:"Engineers testing on site",gc5:"Pilot barge",gc6:"Bipolar membrane made in Pasadena",
+  altV2:"Electrodialysis and piping equipment at the pilot plant",altV3:"Pre-treatment tanks at the pilot plant with the coastline behind",altV4:"Carbonjour and Captura teams in a meeting",
+  vc2:"Equipment area at the pilot plant",vc3:"Pre-treatment tanks and the coast",vc4:"Meeting the Captura team"
+});
