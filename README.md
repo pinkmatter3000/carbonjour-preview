@@ -14,6 +14,7 @@ Bilingual (Chinese / English) website for Carbonjour, Captura's exclusive partne
   - 公共文件：`v2/assets/site.css`、`site.js`、`i18n.js`（英文文案）
   - 源文件在 `v2/_src/`：`layout.html` 是公共页头页脚，`pages/` 是各页正文，`parts/` 是可复用的区块；修改后运行 `node v2/_src/build.js` 重新生成页面
   - `v2/img/` 中标注「Photo: Captura」的图片由 Captura 提供
+- `v3/`：第三版（暖色纸感底色、深海绿、全屏菜单），访问路径 /v3/；结构与 v2 相同，修改 `v3/_src/` 后运行 `node v3/_src/build.js`
 - 语言：右上角「中 / EN」切换；`?lang=en` 或 `#en` 直接打开英文版；记住访客上次的选择
 - 联系表单：暂无后端，提交时调用访客的邮件客户端发送至 djh@carbonjour.com
 

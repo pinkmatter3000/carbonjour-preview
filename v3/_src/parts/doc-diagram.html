@@ -1,0 +1,118 @@
+<!-- DOC DIAGRAM -->
+<section class="sec paper-grid" id="diagram" aria-labelledby="dg-t">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="kicker"><span data-i18n="dgEye">工艺示意图</span><span class="en">Process diagram</span></span>
+        <h2 id="dg-t" data-i18n="dgH">一套系统里发生了什么</h2>
+      </div>
+      <ul class="legend" aria-label="图例" data-i18n-attr="aria-label:dgLegend">
+        <li><i style="background:var(--water)"></i><span data-i18n="dgLgSea">海水</span></li>
+        <li><i style="background:var(--acid)"></i><span data-i18n="dgLgAcid">酸液</span></li>
+        <li><i style="background:var(--base)"></i><span data-i18n="dgLgBase">碱液</span></li>
+        <li><i style="background:var(--co2)"></i><span>CO₂</span></li>
+        <li><i class="dash" style="border-color:var(--ink-3)"></i><span data-i18n="dgLgPower">可再生电力</span></li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <div class="diagram-scroll">
+      <svg viewBox="0 0 1200 620" role="img" aria-labelledby="dg-title dg-desc">
+        <title id="dg-title" data-i18n="dgTitle">直接海洋捕集工艺示意图</title>
+        <desc id="dg-desc" data-i18n="dgDesc">海水经取水口进入预处理，再由可再生电力驱动的双极膜电渗析分离出酸液和碱液；酸化后的海水释放 CO₂，被提取后封存或利用；碱液把海水 pH 恢复后回流海洋，脱碳的海水再从大气中吸收等量 CO₂。</desc>
+        <defs>
+          <linearGradient id="dgSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F8F7"/><stop offset="1" stop-color="#E1EEEB"/></linearGradient>
+          <linearGradient id="dgSea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4C9C95"/><stop offset=".45" stop-color="#1D5E66"/><stop offset="1" stop-color="#0B2C35"/></linearGradient>
+          <linearGradient id="dgLand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D6DDD8"/><stop offset="1" stop-color="#B9C4BE"/></linearGradient>
+          <radialGradient id="dgPlume" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#9FE0D4" stop-opacity=".55"/><stop offset="1" stop-color="#9FE0D4" stop-opacity="0"/></radialGradient>
+          <marker id="dgArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E07B45"/></marker>
+          <marker id="dgArrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0B1F26"/></marker>
+        </defs>
+
+        <!-- sky, sea, shore -->
+        <rect width="1200" height="300" fill="url(#dgSky)"/>
+        <path d="M0 300 C 90 288 180 312 270 300 S 450 288 540 300 L 640 300 L 820 620 L 0 620 Z" fill="url(#dgSea)"/>
+        <path d="M0 300 C 90 288 180 312 270 300 S 450 288 540 300 L 640 300" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="2"/>
+        <path d="M600 236 L1200 236 L1200 620 L820 620 L640 300 Z" fill="url(#dgLand)"/>
+        <path d="M600 236 L1200 236" stroke="#9AA9A2" stroke-width="2"/>
+        <g stroke="#A8B6AF" stroke-width="1.5" opacity=".7"><path d="M760 400 l40 -6 M900 470 l60 4 M1020 360 l40 -8 M1100 520 l50 6 M860 560 l40 -4"/></g>
+
+        <!-- atmosphere CO2 molecules -->
+        <text class="dg-small" x="40" y="44" data-i18n="dgAir">大气中的 CO₂</text>
+        <g class="mol"><circle cx="110" cy="96" r="20"/><text x="110" y="101">CO₂</text></g>
+        <g class="mol m2"><circle cx="230" cy="70" r="20"/><text x="230" y="75">CO₂</text></g>
+        <g class="mol m3"><circle cx="350" cy="120" r="20"/><text x="350" y="125">CO₂</text></g>
+        <g class="mol"><circle cx="470" cy="80" r="20"/><text x="470" y="85">CO₂</text></g>
+        <g class="mol m2"><circle cx="180" cy="180" r="20"/><text x="180" y="185">CO₂</text></g>
+
+        <!-- step 4: ocean draws CO2 back from the air -->
+        <g class="uptake" stroke="#E07B45" stroke-width="3" fill="none" marker-end="url(#dgArrow)">
+          <path d="M330 180 V 300"/><path d="M410 160 V 300"/><path d="M490 190 V 300"/>
+        </g>
+
+        <!-- return plume in the sea -->
+        <ellipse cx="460" cy="540" rx="150" ry="60" fill="url(#dgPlume)"/>
+
+        <!-- pipes: soft casing + animated flow -->
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <!-- intake: sea -> pretreatment -->
+          <path d="M470 470 H660 C690 470 710 450 710 420 V236" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="12"/>
+          <path class="flow" d="M470 470 H660 C690 470 710 450 710 420 V236" stroke="var(--water)" stroke-width="5"/>
+          <!-- pretreatment -> ED -->
+          <path class="flow" d="M740 200 H790" stroke="var(--water)" stroke-width="5"/>
+          <!-- ED -> stripper (acid) -->
+          <path class="flow" d="M900 180 H950" stroke="var(--acid)" stroke-width="5"/>
+          <!-- CO2 out of the stripper -> storage -->
+          <path class="flow slow" d="M970 92 V60 H1080 V170" stroke="var(--co2)" stroke-width="5"/>
+          <!-- base out of ED -->
+          <path class="flow" d="M860 236 V352" stroke="var(--base)" stroke-width="5"/>
+          <!-- decarbonized acidic water out of the stripper -->
+          <path class="flow" d="M975 236 V352 H872" stroke="var(--acid)" stroke-width="5"/>
+          <!-- neutralized water -> outfall -->
+          <path d="M866 352 V540 H560" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="12"/>
+          <path class="flow" d="M866 352 V540 H560" stroke="var(--base)" stroke-width="5"/>
+          <!-- renewable power -->
+          <path class="power" d="M652 40 H845 V150" stroke="#83959A" stroke-width="2"/>
+        </g>
+        <circle cx="866" cy="352" r="9" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <circle cx="470" cy="470" r="7" fill="#FFFFFF"/>
+        <circle cx="560" cy="540" r="7" fill="#FFFFFF"/>
+
+        <!-- equipment -->
+        <rect x="680" y="160" width="60" height="76" rx="8" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <path d="M690 184 h40 M690 200 h40 M690 216 h40" stroke="#4C9C95" stroke-width="2"/>
+        <rect x="790" y="150" width="110" height="86" rx="6" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <g stroke-width="5"><path d="M808 160 v66" stroke="var(--acid)"/><path d="M814 160 v66" stroke="var(--base)"/><path d="M832 160 v66" stroke="#9CC5BF"/><path d="M852 160 v66" stroke="var(--acid)"/><path d="M858 160 v66" stroke="var(--base)"/><path d="M876 160 v66" stroke="#9CC5BF"/></g>
+        <rect x="950" y="92" width="44" height="144" rx="20" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <g fill="#E07B45" class="bubbles"><circle cx="966" cy="200" r="4"/><circle cx="978" cy="170" r="3"/><circle cx="968" cy="140" r="3.5"/><circle cx="980" cy="118" r="2.5"/></g>
+        <rect x="1040" y="170" width="84" height="66" rx="30" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <text x="1082" y="208" class="dg-tank">CO₂</text>
+        <!-- wind turbine -->
+        <path d="M622 236 L618 128 H626 Z" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <g class="rotor" style="transform-origin:622px 126px"><path d="M622 126 L617 90 L622 84 L627 90 Z M622 126 L655 141 L658 148 L651 148 Z M622 126 L591 145 L585 144 L588 137 Z" fill="#FFFFFF" stroke="#0B1F26" stroke-width="1.5"/></g>
+        <circle cx="622" cy="126" r="5" fill="#0B1F26"/>
+
+        <!-- step badges and labels -->
+        <g class="badge"><circle cx="694" cy="136" r="14"/><text x="694" y="141">1</text></g>
+        <g class="badge"><circle cx="812" cy="128" r="14"/><text x="812" y="133">2</text></g>
+        <g class="badge"><circle cx="935" cy="62" r="14"/><text x="935" y="67">3</text></g>
+        <g class="badge"><circle cx="300" cy="240" r="14"/><text x="300" y="245">4</text></g>
+
+        <text class="dg-small" x="1082" y="264" text-anchor="middle" data-i18n="dgStore">封存或利用</text>
+        <text class="dg-small" x="700" y="30" data-i18n="dgPower">可再生电力</text>
+        <text class="dg-tiny" x="925" y="170" text-anchor="middle" data-i18n="dgAcid">酸</text>
+        <text class="dg-tiny" x="850" y="300" text-anchor="end" data-i18n="dgBase">碱</text>
+        <text class="dg-tiny" x="884" y="376" data-i18n="dgMix">恢复 pH</text>
+        <text class="dg-sea" x="470" y="456" data-i18n="dgIntake">取水口</text>
+        <text class="dg-sea" x="460" y="600" data-i18n="dgReturn">低 CO₂ 海水回流</text>
+      </svg>
+      </div>
+      <ol class="dg-steps">
+        <li><b>1</b><span data-i18n="s1h">取少量海水</span></li>
+        <li><b>2</b><span data-i18n="s2h">电渗析制酸碱</span></li>
+        <li><b>3</b><span data-i18n="s3h">释放并收集 CO₂</span></li>
+        <li><b>4</b><span data-i18n="s4h">海水回流，再吸碳</span></li>
+      </ol>
+      <figcaption data-i18n="dgCap">示意图，未按比例绘制。实际工厂可与电厂、淡化厂等已有取排水设施共址建设。</figcaption>
+    </figure>
+  </div>
+</section>

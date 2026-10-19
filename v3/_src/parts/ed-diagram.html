@@ -1,0 +1,53 @@
+<figure class="diagram ed-diagram">
+  <div class="diagram-scroll">
+  <svg viewBox="0 0 760 400" role="img" aria-labelledby="ed-title ed-desc">
+    <title id="ed-title" data-i18n="edgTitle">双极膜电渗析单元示意图</title>
+    <desc id="ed-desc" data-i18n="edgDesc">通电后，双极膜把水分解为氢离子和氢氧根离子：氢离子进入酸室，氢氧根进入碱室；钠离子穿过阳离子交换膜进入碱室，于是一侧得到酸，另一侧得到碱。</desc>
+    <defs>
+      <marker id="edArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0B1F26"/></marker>
+    </defs>
+    <!-- chambers -->
+    <rect x="50" y="60" width="150" height="260" fill="#E4EFF5"/>
+    <rect x="216" y="60" width="184" height="260" fill="#FBEDE4"/>
+    <rect x="410" y="60" width="180" height="260" fill="#E4EFF5"/>
+    <rect x="606" y="60" width="104" height="260" fill="#FBEDE4"/>
+    <!-- electrodes -->
+    <rect x="30" y="60" width="20" height="260" rx="3" fill="#0B1F26"/>
+    <rect x="710" y="60" width="20" height="260" rx="3" fill="#0B1F26"/>
+    <text class="ed-pole" x="40" y="46">+</text>
+    <text class="ed-pole" x="720" y="46">−</text>
+    <!-- membranes: BPM = anion layer + cation layer, CEM single -->
+    <rect x="200" y="60" width="8" height="260" fill="var(--base)"/><rect x="208" y="60" width="8" height="260" fill="var(--acid)"/>
+    <rect x="400" y="60" width="10" height="260" fill="#8FB9B2"/>
+    <rect x="590" y="60" width="8" height="260" fill="var(--base)"/><rect x="598" y="60" width="8" height="260" fill="var(--acid)"/>
+    <!-- chamber names -->
+    <text class="ed-head" x="308" y="92" data-i18n="edgAcid">酸室</text>
+    <text class="ed-head" x="500" y="92" data-i18n="edgBase">碱室</text>
+    <!-- water splitting at the bipolar membranes -->
+    <g class="ed-ion"><circle cx="208" cy="150" r="17" fill="#FFFFFF" stroke="#0B1F26" stroke-width="1.5"/><text x="208" y="155">H₂O</text></g>
+    <g class="ed-ion"><circle cx="598" cy="150" r="17" fill="#FFFFFF" stroke="#0B1F26" stroke-width="1.5"/><text x="598" y="155">H₂O</text></g>
+    <g stroke="#0B1F26" stroke-width="2" fill="none" marker-end="url(#edArrow)" class="ed-move">
+      <path class="mv-r" d="M232 150 H290"/><path class="mv-l" d="M184 150 H130"/>
+      <path class="mv-r" d="M622 150 H676"/><path class="mv-l" d="M574 150 H516"/>
+      <path class="mv-r" d="M350 232 H462"/>
+    </g>
+    <text class="ed-ionl acid" x="312" y="155">H⁺</text>
+    <text class="ed-ionl base" x="108" y="155">OH⁻</text>
+    <text class="ed-ionl acid" x="696" y="155">H⁺</text>
+    <text class="ed-ionl base" x="494" y="155">OH⁻</text>
+    <text class="ed-ionl" x="322" y="237">Na⁺</text>
+    <text class="ed-ionl muted" x="300" y="200">Cl⁻</text>
+    <!-- feeds and products -->
+    <g stroke="#83959A" stroke-width="2" fill="none" marker-end="url(#edArrow)"><path d="M308 360 V328"/><path d="M500 360 V328"/><path d="M308 56 V22"/><path d="M500 56 V22"/></g>
+    <text class="ed-small" x="308" y="384" data-i18n="edgIn1">海水</text>
+    <text class="ed-small" x="500" y="384" data-i18n="edgIn2">循环液</text>
+    <text class="ed-small" x="308" y="14" data-i18n="edgOut1">酸化海水 → 提取 CO₂</text>
+    <text class="ed-small" x="500" y="14" data-i18n="edgOut2">碱液 → 恢复 pH</text>
+    <!-- membrane names -->
+    <text class="ed-mem" x="208" y="340">BPM</text>
+    <text class="ed-mem" x="405" y="340">CEM</text>
+    <text class="ed-mem" x="598" y="340">BPM</text>
+  </svg>
+  </div>
+  <figcaption data-i18n="edgCap">BPM：双极膜，把水分解为 H⁺ 和 OH⁻；CEM：阳离子交换膜，只让阳离子通过。实际电堆由多个这样的单元叠加而成。</figcaption>
+</figure>

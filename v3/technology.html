@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>技术原理 · 海浦麒 Carbonjour</title>
+<meta name="description" content="Captura 直接海洋捕集（DOC）的工作原理、双极膜电渗析产品参数、海洋健康与 MRV 监测，以及从 1 吨到 1,000 吨的验证历程。">
+<link rel="canonical" href="https://pinkmatter3000.github.io/carbonjour-website/v3/technology.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0A1A20">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="海浦麒 Carbonjour">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://pinkmatter3000.github.io/carbonjour-website/v3/technology.html">
+<meta property="og:title" content="技术原理 · 海浦麒 Carbonjour">
+<meta property="og:description" content="Captura 直接海洋捕集（DOC）的工作原理、双极膜电渗析产品参数、海洋健康与 MRV 监测，以及从 1 吨到 1,000 吨的验证历程。">
+<meta property="og:image" content="https://pinkmatter3000.github.io/carbonjour-website/v3/img/hawaii-plant.jpg">
+<meta property="og:image:width" content="2000">
+<meta property="og:image:height" content="1498">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="技术原理 · 海浦麒 Carbonjour">
+<meta name="twitter:description" content="Captura 直接海洋捕集（DOC）的工作原理、双极膜电渗析产品参数、海洋健康与 MRV 监测，以及从 1 吨到 1,000 吨的验证历程。">
+<meta name="twitter:image" content="https://pinkmatter3000.github.io/carbonjour-website/v3/img/hawaii-plant.jpg">
+<link rel="preload" as="image" href="img/hawaii-plant.jpg" fetchpriority="high">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://pinkmatter3000.github.io/carbonjour-website/v3/"},{"@type":"ListItem","position":2,"name":"技术","item":"https://pinkmatter3000.github.io/carbonjour-website/v3/technology.html"}]}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%230F3634'/%3E%3Cpath d='M6 19c3-3 5-3 8 0s5 3 8 0 4-2.6 5-1' stroke='%23CDE98C' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='11' r='3' fill='%23F3EEE6'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-page="technology">
+<a class="skip" href="#main" data-i18n="skip">跳到正文</a>
+
+<header class="bar" id="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand" data-i18n-attr="aria-label:brandHome" aria-label="海浦麒 Carbonjour 首页">
+      <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="17" fill="currentColor"/><path d="M6 20c3.2-3.2 5.4-3.2 8.6 0s5.4 3.2 8.6 0 4.6-3 5.8-1.2" stroke="#1C524D" stroke-width="2.6" fill="none" stroke-linecap="round"/><circle cx="17" cy="11.5" r="3.2" fill="#CDE98C"/></svg>
+      <span class="brand-name"><strong data-i18n="brandName">海浦麒</strong><span data-i18n="brandSub">Carbonjour</span></span>
+    </a>
+    <div class="bar-right">
+      <div class="lang" role="group" aria-label="Language / 语言">
+        <button type="button" data-lang="zh" aria-pressed="true" lang="zh-CN"><span>中</span></button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en"><span>EN</span></button>
+      </div>
+      <a href="contact.html" class="btn bar-cta" data-i18n="ctaBook">预约技术交流</a>
+      <button class="menu-btn" id="burger" type="button" aria-expanded="false" aria-controls="menu" data-i18n-attr="aria-label:menuOpen" aria-label="打开菜单"><i aria-hidden="true"></i><span data-i18n="menuLabel">菜单</span></button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" role="dialog" aria-modal="true" data-i18n-attr="aria-label:navLabel" aria-label="主导航">
+  <nav>
+    <ul class="menu-list">
+      <li><a href="index.html" data-nav="home" data-i18n="crumbHome">首页</a></li>
+      <li><a href="technology.html" data-nav="technology" class="active" aria-current="page" data-i18n="navTech">技术</a></li>
+      <li><a href="solutions.html" data-nav="solutions" data-i18n="navSol">解决方案</a></li>
+      <li><a href="partnership.html" data-nav="partnership" data-i18n="navPart">合作模式</a></li>
+      <li><a href="about.html" data-nav="about" data-i18n="navAbout">关于我们</a></li>
+      <li><a href="news.html" data-nav="news" data-i18n="navNews">动态</a></li>
+      <li><a href="contact.html" data-nav="contact" data-i18n="ctEye">联系我们</a></li>
+    </ul>
+  </nav>
+  <div class="menu-side" aria-hidden="true">
+    <img src="img/hawaii-plant.jpg" width="2000" height="1498" alt="" loading="lazy">
+    <div class="menu-meta"><b data-i18n="coName">上海海浦麒碳科技有限公司</b><span>djh@carbonjour.com</span><span>Keāhole Point · Pasadena · Shanghai</span></div>
+  </div>
+</div>
+
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="index.html" data-i18n="crumbHome">首页</a><span>/</span><span data-i18n="navTech">技术</span></nav>
+    <div class="grid">
+      <div><span class="kicker"><span data-i18n="tPhEye">技术原理</span><span class="en">Technology</span></span><h1 data-i18n="tPhH">只用海水和绿电，<br>把碳从大气里取出来</h1></div>
+      <p class="lead" data-i18n="tPhP">核心是 Captura 在加州理工研发的双极膜电渗析平台。它驱动直接海洋捕集，也作为独立产品服务提锂、水处理与储能。</p>
+    </div>
+    <figure class="ph tone"><img src="img/hawaii-plant.jpg" width="2000" height="1498" alt="" fetchpriority="high"></figure>
+  </div>
+</section>
+
+<!-- DOC DIAGRAM -->
+<section class="sec paper-grid" id="diagram" aria-labelledby="dg-t">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="kicker"><span data-i18n="dgEye">工艺示意图</span><span class="en">Process diagram</span></span>
+        <h2 id="dg-t" data-i18n="dgH">一套系统里发生了什么</h2>
+      </div>
+      <ul class="legend" aria-label="图例" data-i18n-attr="aria-label:dgLegend">
+        <li><i style="background:var(--water)"></i><span data-i18n="dgLgSea">海水</span></li>
+        <li><i style="background:var(--acid)"></i><span data-i18n="dgLgAcid">酸液</span></li>
+        <li><i style="background:var(--base)"></i><span data-i18n="dgLgBase">碱液</span></li>
+        <li><i style="background:var(--co2)"></i><span>CO₂</span></li>
+        <li><i class="dash" style="border-color:var(--ink-3)"></i><span data-i18n="dgLgPower">可再生电力</span></li>
+      </ul>
+    </div>
+    <figure class="diagram">
+      <div class="diagram-scroll">
+      <svg viewBox="0 0 1200 620" role="img" aria-labelledby="dg-title dg-desc">
+        <title id="dg-title" data-i18n="dgTitle">直接海洋捕集工艺示意图</title>
+        <desc id="dg-desc" data-i18n="dgDesc">海水经取水口进入预处理，再由可再生电力驱动的双极膜电渗析分离出酸液和碱液；酸化后的海水释放 CO₂，被提取后封存或利用；碱液把海水 pH 恢复后回流海洋，脱碳的海水再从大气中吸收等量 CO₂。</desc>
+        <defs>
+          <linearGradient id="dgSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F8F7"/><stop offset="1" stop-color="#E1EEEB"/></linearGradient>
+          <linearGradient id="dgSea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4C9C95"/><stop offset=".45" stop-color="#1D5E66"/><stop offset="1" stop-color="#0B2C35"/></linearGradient>
+          <linearGradient id="dgLand" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D6DDD8"/><stop offset="1" stop-color="#B9C4BE"/></linearGradient>
+          <radialGradient id="dgPlume" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#9FE0D4" stop-opacity=".55"/><stop offset="1" stop-color="#9FE0D4" stop-opacity="0"/></radialGradient>
+          <marker id="dgArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E07B45"/></marker>
+          <marker id="dgArrowInk" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0B1F26"/></marker>
+        </defs>
+
+        <!-- sky, sea, shore -->
+        <rect width="1200" height="300" fill="url(#dgSky)"/>
+        <path d="M0 300 C 90 288 180 312 270 300 S 450 288 540 300 L 640 300 L 820 620 L 0 620 Z" fill="url(#dgSea)"/>
+        <path d="M0 300 C 90 288 180 312 270 300 S 450 288 540 300 L 640 300" fill="none" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="2"/>
+        <path d="M600 236 L1200 236 L1200 620 L820 620 L640 300 Z" fill="url(#dgLand)"/>
+        <path d="M600 236 L1200 236" stroke="#9AA9A2" stroke-width="2"/>
+        <g stroke="#A8B6AF" stroke-width="1.5" opacity=".7"><path d="M760 400 l40 -6 M900 470 l60 4 M1020 360 l40 -8 M1100 520 l50 6 M860 560 l40 -4"/></g>
+
+        <!-- atmosphere CO2 molecules -->
+        <text class="dg-small" x="40" y="44" data-i18n="dgAir">大气中的 CO₂</text>
+        <g class="mol"><circle cx="110" cy="96" r="20"/><text x="110" y="101">CO₂</text></g>
+        <g class="mol m2"><circle cx="230" cy="70" r="20"/><text x="230" y="75">CO₂</text></g>
+        <g class="mol m3"><circle cx="350" cy="120" r="20"/><text x="350" y="125">CO₂</text></g>
+        <g class="mol"><circle cx="470" cy="80" r="20"/><text x="470" y="85">CO₂</text></g>
+        <g class="mol m2"><circle cx="180" cy="180" r="20"/><text x="180" y="185">CO₂</text></g>
+
+        <!-- step 4: ocean draws CO2 back from the air -->
+        <g class="uptake" stroke="#E07B45" stroke-width="3" fill="none" marker-end="url(#dgArrow)">
+          <path d="M330 180 V 300"/><path d="M410 160 V 300"/><path d="M490 190 V 300"/>
+        </g>
+
+        <!-- return plume in the sea -->
+        <ellipse cx="460" cy="540" rx="150" ry="60" fill="url(#dgPlume)"/>
+
+        <!-- pipes: soft casing + animated flow -->
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <!-- intake: sea -> pretreatment -->
+          <path d="M470 470 H660 C690 470 710 450 710 420 V236" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="12"/>
+          <path class="flow" d="M470 470 H660 C690 470 710 450 710 420 V236" stroke="var(--water)" stroke-width="5"/>
+          <!-- pretreatment -> ED -->
+          <path class="flow" d="M740 200 H790" stroke="var(--water)" stroke-width="5"/>
+          <!-- ED -> stripper (acid) -->
+          <path class="flow" d="M900 180 H950" stroke="var(--acid)" stroke-width="5"/>
+          <!-- CO2 out of the stripper -> storage -->
+          <path class="flow slow" d="M970 92 V60 H1080 V170" stroke="var(--co2)" stroke-width="5"/>
+          <!-- base out of ED -->
+          <path class="flow" d="M860 236 V352" stroke="var(--base)" stroke-width="5"/>
+          <!-- decarbonized acidic water out of the stripper -->
+          <path class="flow" d="M975 236 V352 H872" stroke="var(--acid)" stroke-width="5"/>
+          <!-- neutralized water -> outfall -->
+          <path d="M866 352 V540 H560" stroke="#FFFFFF" stroke-opacity=".35" stroke-width="12"/>
+          <path class="flow" d="M866 352 V540 H560" stroke="var(--base)" stroke-width="5"/>
+          <!-- renewable power -->
+          <path class="power" d="M652 40 H845 V150" stroke="#83959A" stroke-width="2"/>
+        </g>
+        <circle cx="866" cy="352" r="9" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <circle cx="470" cy="470" r="7" fill="#FFFFFF"/>
+        <circle cx="560" cy="540" r="7" fill="#FFFFFF"/>
+
+        <!-- equipment -->
+        <rect x="680" y="160" width="60" height="76" rx="8" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <path d="M690 184 h40 M690 200 h40 M690 216 h40" stroke="#4C9C95" stroke-width="2"/>
+        <rect x="790" y="150" width="110" height="86" rx="6" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <g stroke-width="5"><path d="M808 160 v66" stroke="var(--acid)"/><path d="M814 160 v66" stroke="var(--base)"/><path d="M832 160 v66" stroke="#9CC5BF"/><path d="M852 160 v66" stroke="var(--acid)"/><path d="M858 160 v66" stroke="var(--base)"/><path d="M876 160 v66" stroke="#9CC5BF"/></g>
+        <rect x="950" y="92" width="44" height="144" rx="20" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <g fill="#E07B45" class="bubbles"><circle cx="966" cy="200" r="4"/><circle cx="978" cy="170" r="3"/><circle cx="968" cy="140" r="3.5"/><circle cx="980" cy="118" r="2.5"/></g>
+        <rect x="1040" y="170" width="84" height="66" rx="30" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <text x="1082" y="208" class="dg-tank">CO₂</text>
+        <!-- wind turbine -->
+        <path d="M622 236 L618 128 H626 Z" fill="#FFFFFF" stroke="#0B1F26" stroke-width="2"/>
+        <g class="rotor" style="transform-origin:622px 126px"><path d="M622 126 L617 90 L622 84 L627 90 Z M622 126 L655 141 L658 148 L651 148 Z M622 126 L591 145 L585 144 L588 137 Z" fill="#FFFFFF" stroke="#0B1F26" stroke-width="1.5"/></g>
+        <circle cx="622" cy="126" r="5" fill="#0B1F26"/>
+
+        <!-- step badges and labels -->
+        <g class="badge"><circle cx="694" cy="136" r="14"/><text x="694" y="141">1</text></g>
+        <g class="badge"><circle cx="812" cy="128" r="14"/><text x="812" y="133">2</text></g>
+        <g class="badge"><circle cx="935" cy="62" r="14"/><text x="935" y="67">3</text></g>
+        <g class="badge"><circle cx="300" cy="240" r="14"/><text x="300" y="245">4</text></g>
+
+        <text class="dg-small" x="1082" y="264" text-anchor="middle" data-i18n="dgStore">封存或利用</text>
+        <text class="dg-small" x="700" y="30" data-i18n="dgPower">可再生电力</text>
+        <text class="dg-tiny" x="925" y="170" text-anchor="middle" data-i18n="dgAcid">酸</text>
+        <text class="dg-tiny" x="850" y="300" text-anchor="end" data-i18n="dgBase">碱</text>
+        <text class="dg-tiny" x="884" y="376" data-i18n="dgMix">恢复 pH</text>
+        <text class="dg-sea" x="470" y="456" data-i18n="dgIntake">取水口</text>
+        <text class="dg-sea" x="460" y="600" data-i18n="dgReturn">低 CO₂ 海水回流</text>
+      </svg>
+      </div>
+      <ol class="dg-steps">
+        <li><b>1</b><span data-i18n="s1h">取少量海水</span></li>
+        <li><b>2</b><span data-i18n="s2h">电渗析制酸碱</span></li>
+        <li><b>3</b><span data-i18n="s3h">释放并收集 CO₂</span></li>
+        <li><b>4</b><span data-i18n="s4h">海水回流，再吸碳</span></li>
+      </ol>
+      <figcaption data-i18n="dgCap">示意图，未按比例绘制。实际工厂可与电厂、淡化厂等已有取排水设施共址建设。</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="sec" aria-labelledby="how-t">
+  <div class="wrap">
+    <div class="head">
+      <div><span class="kicker"><span data-i18n="howEye">技术原理</span><span class="en">Direct Ocean Capture</span></span><h2 id="how-t" data-i18n="howH">四步，把空气里的碳<br>交给海洋，再取出来</h2></div>
+      <p class="lead" data-i18n="howLead">系统只需要两种输入：海水与可再生电力。不向海洋添加任何物质，没有副产物，也不占用淡水。</p>
+    </div>
+    <ol class="steps">
+      <li class="step"><span class="k">01</span><h3 data-i18n="s1h">取少量海水</h3><p data-i18n="s1p">抽取一小部分海水并预处理，可直接复用电厂、淡化厂已有的取水设施。</p></li>
+      <li class="step"><span class="k">02</span><h3 data-i18n="s2h">电渗析制酸碱</h3><p data-i18n="s2p">可再生电力驱动双极膜电堆，把海水中的盐分离为酸液和碱液。</p></li>
+      <li class="step"><span class="k">03</span><h3 data-i18n="s3h">释放并收集 CO₂</h3><p data-i18n="s3p">酸液让溶解无机碳转化为 CO₂ 气体，分离出高纯度、可计量的 CO₂ 气流。</p></li>
+      <li class="step"><span class="k">04</span><h3 data-i18n="s4h">海水回流，再吸碳</h3><p data-i18n="s4p">碱液恢复 pH 后海水回到海洋，并从大气中重新吸收等量的 CO₂。</p></li>
+    </ol>
+    <div class="outs"><span data-i18n="out1"><b>封存</b>与地质封存服务商合作，锁存数千年</span><span data-i18n="out2"><b>利用</b>合成燃料、化学品、建材</span></div>
+  </div>
+</section>
+
+<!-- ELECTRODIALYSIS -->
+<section class="sec" id="ed" aria-labelledby="ed-t">
+  <div class="wrap split">
+    <figure class="diagram ed-diagram">
+  <div class="diagram-scroll">
+  <svg viewBox="0 0 760 400" role="img" aria-labelledby="ed-title ed-desc">
+    <title id="ed-title" data-i18n="edgTitle">双极膜电渗析单元示意图</title>
+    <desc id="ed-desc" data-i18n="edgDesc">通电后，双极膜把水分解为氢离子和氢氧根离子：氢离子进入酸室，氢氧根进入碱室；钠离子穿过阳离子交换膜进入碱室，于是一侧得到酸，另一侧得到碱。</desc>
+    <defs>
+      <marker id="edArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0B1F26"/></marker>
+    </defs>
+    <!-- chambers -->
+    <rect x="50" y="60" width="150" height="260" fill="#E4EFF5"/>
+    <rect x="216" y="60" width="184" height="260" fill="#FBEDE4"/>
+    <rect x="410" y="60" width="180" height="260" fill="#E4EFF5"/>
+    <rect x="606" y="60" width="104" height="260" fill="#FBEDE4"/>
+    <!-- electrodes -->
+    <rect x="30" y="60" width="20" height="260" rx="3" fill="#0B1F26"/>
+    <rect x="710" y="60" width="20" height="260" rx="3" fill="#0B1F26"/>
+    <text class="ed-pole" x="40" y="46">+</text>
+    <text class="ed-pole" x="720" y="46">−</text>
+    <!-- membranes: BPM = anion layer + cation layer, CEM single -->
+    <rect x="200" y="60" width="8" height="260" fill="var(--base)"/><rect x="208" y="60" width="8" height="260" fill="var(--acid)"/>
+    <rect x="400" y="60" width="10" height="260" fill="#8FB9B2"/>
+    <rect x="590" y="60" width="8" height="260" fill="var(--base)"/><rect x="598" y="60" width="8" height="260" fill="var(--acid)"/>
+    <!-- chamber names -->
+    <text class="ed-head" x="308" y="92" data-i18n="edgAcid">酸室</text>
+    <text class="ed-head" x="500" y="92" data-i18n="edgBase">碱室</text>
+    <!-- water splitting at the bipolar membranes -->
+    <g class="ed-ion"><circle cx="208" cy="150" r="17" fill="#FFFFFF" stroke="#0B1F26" stroke-width="1.5"/><text x="208" y="155">H₂O</text></g>
+    <g class="ed-ion"><circle cx="598" cy="150" r="17" fill="#FFFFFF" stroke="#0B1F26" stroke-width="1.5"/><text x="598" y="155">H₂O</text></g>
+    <g stroke="#0B1F26" stroke-width="2" fill="none" marker-end="url(#edArrow)" class="ed-move">
+      <path class="mv-r" d="M232 150 H290"/><path class="mv-l" d="M184 150 H130"/>
+      <path class="mv-r" d="M622 150 H676"/><path class="mv-l" d="M574 150 H516"/>
+      <path class="mv-r" d="M350 232 H462"/>
+    </g>
+    <text class="ed-ionl acid" x="312" y="155">H⁺</text>
+    <text class="ed-ionl base" x="108" y="155">OH⁻</text>
+    <text class="ed-ionl acid" x="696" y="155">H⁺</text>
+    <text class="ed-ionl base" x="494" y="155">OH⁻</text>
+    <text class="ed-ionl" x="322" y="237">Na⁺</text>
+    <text class="ed-ionl muted" x="300" y="200">Cl⁻</text>
+    <!-- feeds and products -->
+    <g stroke="#83959A" stroke-width="2" fill="none" marker-end="url(#edArrow)"><path d="M308 360 V328"/><path d="M500 360 V328"/><path d="M308 56 V22"/><path d="M500 56 V22"/></g>
+    <text class="ed-small" x="308" y="384" data-i18n="edgIn1">海水</text>
+    <text class="ed-small" x="500" y="384" data-i18n="edgIn2">循环液</text>
+    <text class="ed-small" x="308" y="14" data-i18n="edgOut1">酸化海水 → 提取 CO₂</text>
+    <text class="ed-small" x="500" y="14" data-i18n="edgOut2">碱液 → 恢复 pH</text>
+    <!-- membrane names -->
+    <text class="ed-mem" x="208" y="340">BPM</text>
+    <text class="ed-mem" x="405" y="340">CEM</text>
+    <text class="ed-mem" x="598" y="340">BPM</text>
+  </svg>
+  </div>
+  <figcaption data-i18n="edgCap">BPM：双极膜，把水分解为 H⁺ 和 OH⁻；CEM：阳离子交换膜，只让阳离子通过。实际电堆由多个这样的单元叠加而成。</figcaption>
+</figure>
+    <div>
+      <span class="kicker"><span data-i18n="edEye">双极膜电渗析</span><span class="en">Bipolar membrane electrodialysis</span></span>
+      <h2 id="ed-t" data-i18n="edH">同一块膜，不止于碳移除</h2>
+      <p data-i18n="edP1">电渗析用离子交换膜和电流，直接从盐溶液中制取酸和碱，可处理多种进水和工业废液。Captura 在加州帕萨迪纳的工厂以卷对卷工艺量产双极膜，并组装电堆。</p>
+      <div class="facts">
+        <div><strong>10×</strong><span data-i18n="edF1">性能最高可达主流方案的 10 倍，能耗与投资更低</span></div>
+        <div><strong>&lt; 10 µV/h</strong><span data-i18n="edF2">实测电压衰减率，支持多年膜寿命目标</span></div>
+        <div><strong>PFAS-free</strong><span data-i18n="edF3">膜材料不含全氟化合物</span></div>
+        <div><strong>BPM · CEM</strong><span data-i18n="edF4">双极膜、阳离子交换膜、电堆与交钥匙系统</span></div>
+      </div>
+      <div class="chips dark" style="margin-top:24px"><span data-i18n="p2c1">直接提锂</span><span data-i18n="p2c2">浓盐水资源化</span><span data-i18n="edC3">工业废水资源化</span><span data-i18n="p2c3">长时储能</span><span data-i18n="p2c4">电化学碳捕集</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- OCEAN HEALTH / MRV -->
+<section class="sec" aria-labelledby="mrv-t" style="padding-top:0">
+  <div class="wrap split">
+    <div>
+      <span class="kicker"><span data-i18n="mrvEye">海洋健康与 MRV</span><span class="en">Ocean health &amp; MRV</span></span>
+      <h2 id="mrv-t" data-i18n="mrvH">每一吨都可测量、可核证</h2>
+      <p data-i18n="mrvP1">MRV 指监测（Monitoring）、报告（Reporting）与核证（Verification），决定碳移除量是否可信，也决定碳信用的价值。</p>
+      <p data-i18n="mrvP2">Captura 的海洋学团队持续监测工艺与海洋生态的相互作用，联合外部专家开展环境监测、海洋模拟与生物影响研究，并与独立登记机构 Isometric 合作完善直接海洋捕集的方法学。研究成果计划发表在开放获取的同行评审期刊上。</p>
+      <div class="facts">
+        <div><strong>0</strong><span data-i18n="mrvF1">不向海洋添加任何物质，不留化学残留</span></div>
+        <div><strong>Isometric</strong><span data-i18n="mrvF2">独立碳移除登记机构，参与方法学开发</span></div>
+      </div>
+    </div>
+    <figure class="ph tone"><img src="img/turtle.webp" width="1848" height="1166" alt="海龟在海水中游动" data-i18n-attr="alt:altTurtle" loading="lazy"><figcaption class="credit">Photo: Captura</figcaption></figure>
+  </div>
+</section>
+
+<!-- FIELD GALLERY -->
+<section class="sec" style="padding-top:0" aria-labelledby="gal-t">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="kicker"><span data-i18n="galEye">现场</span><span class="en">In the field</span></span>
+        <h2 id="gal-t" data-i18n="galH">从试点工厂到膜材生产线</h2>
+      </div>
+      <p class="gal-hint" style="justify-self:end" data-i18n="galHint">左右滑动查看更多</p>
+    </div>
+  </div>
+  <div class="gallery" tabindex="0" aria-label="现场照片" data-i18n-attr="aria-label:galLabel">
+    <figure><img src="img/hawaii-aerial.jpg" width="1600" height="1198" alt="夏威夷试点工厂航拍，可见预处理罐组与电渗析集装箱" data-i18n-attr="alt:altG1" loading="lazy"><figcaption><span class="tag">Keāhole Point · 2025</span><span data-i18n="gc1">夏威夷试点工厂航拍</span></figcaption></figure>
+    <figure><img src="img/host-park.jpg" width="1600" height="1067" alt="夏威夷海洋科技园所在的海岸线航拍" data-i18n-attr="alt:altG2" loading="lazy"><figcaption><span class="tag">HOST Park</span><span data-i18n="gc2">夏威夷海洋科技园海岸线</span></figcaption></figure>
+    <figure><img src="img/container-site.webp" width="2048" height="1365" alt="现场的 Captura 设备集装箱" data-i18n-attr="alt:altG3" loading="lazy"><figcaption><span class="tag">Modular unit</span><span data-i18n="gc3">模块化设备集装箱</span></figcaption></figure>
+    <figure><img src="img/scientists.webp" width="2048" height="1365" alt="工程师在现场检查工艺管路" data-i18n-attr="alt:altG4" loading="lazy"><figcaption><span class="tag">Process testing</span><span data-i18n="gc4">工程师现场测试</span></figcaption></figure>
+    <figure><img src="img/barge-dock.webp" width="1200" height="770" alt="停靠在码头的 Captura 试验驳船" data-i18n-attr="alt:altG5" loading="lazy"><figcaption><span class="tag">Pilot barge</span><span data-i18n="gc5">试验驳船</span></figcaption></figure>
+    <figure><img src="img/membrane.jpg" width="792" height="633" alt="Captura 自研双极膜卷材特写" data-i18n-attr="alt:altMembrane" loading="lazy"><figcaption><span class="tag">Pasadena, CA</span><span data-i18n="gc6">帕萨迪纳工厂生产的双极膜</span></figcaption></figure>
+  </div>
+  <p class="wrap gal-credit">Photos: Captura</p>
+</section>
+
+<!-- MILESTONES -->
+<section class="sec" id="milestones" aria-labelledby="ms-t" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><div><span class="kicker"><span data-i18n="msEye">发展历程</span><span class="en">Scaled 1,000× in three years</span></span><h2 id="ms-t" data-i18n="msH">从实验室到海边，再到中国</h2></div></div>
+    <ol class="timeline">
+      <li><figure class="ph tone"><img src="img/caltech.webp" width="2000" height="1428" alt="" loading="lazy"></figure><span class="yr">2022</span><strong data-i18n="ms1s">1 吨/年</strong><p data-i18n="ms1p">第一代系统，加州理工 Kerckhoff 海洋实验室</p></li>
+      <li><figure class="ph tone"><img src="img/pilot-pier.webp" width="610" height="338" alt="" loading="lazy"></figure><span class="yr">2023</span><strong data-i18n="ms2s">100 吨/年</strong><p data-i18n="ms2p">第二代系统，洛杉矶港 AltaSea 海洋研究基地</p></li>
+      <li><figure class="ph tone"><img src="img/barge-aerial.webp" width="1710" height="1583" alt="" loading="lazy"></figure><span class="yr">2025</span><strong data-i18n="ms3s">1,000 吨/年</strong><p data-i18n="ms3p">第三代试点，夏威夷海洋科技园，与 Equinor 合作</p></li>
+      <li><figure class="ph tone"><img src="img/coastal-plant.jpg" width="1400" height="1050" alt="" loading="lazy"></figure><span class="yr" data-i18n="ms4y">进行中</span><strong data-i18n="ms4s">中国落地</strong><p data-i18n="ms4p">海浦麒推进长三角 DOC 中试，探索与海上风电、海洋牧场耦合</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="band sec cta" aria-labelledby="cta-t">
+  <img class="bg" src="img/sea-texture.jpg" width="1800" height="1200" alt="" loading="lazy">
+  <div class="wrap">
+    <span class="kicker"><span data-i18n="ctaEye">下一步</span><span class="en">Next step</span></span>
+    <h2 id="cta-t" data-i18n="ctaH">聊聊你的减碳场景</h2>
+    <p class="lead" data-i18n="ctaP">告诉我们你的行业、设施和目标，技术团队会在 2 个工作日内回复。</p>
+    <div class="actions"><a href="contact.html" class="btn btn-lime" data-i18n="ctaBook">预约技术交流</a><a href="technology.html" class="btn btn-ghost-light" data-i18n="heroLink">了解技术原理</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot-top">
+    <div>
+      <p class="foot-claim" data-i18n="heroH1">让海洋，<br>替地球呼吸</p>
+      <p style="margin-top:18px">djh@carbonjour.com</p>
+    </div>
+    <div>
+      <h4 data-i18n="footNavH">网站</h4>
+      <ul>
+        <li><a href="technology.html" data-i18n="navTech">技术</a></li>
+        <li><a href="solutions.html" data-i18n="navSol">解决方案</a></li>
+        <li><a href="partnership.html" data-i18n="navPart">合作模式</a></li>
+        <li><a href="about.html" data-i18n="navAbout">关于我们</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-i18n="footMoreH">更多</h4>
+      <ul>
+        <li><a href="news.html" data-i18n="navNews">动态</a></li>
+        <li><a href="contact.html" data-i18n="ctEye">联系我们</a></li>
+        <li><a href="https://capturacorp.com/" target="_blank" rel="noopener">Captura ↗</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wordmark" aria-hidden="true">Carbonjour</div>
+  <div class="foot-bottom">
+    <div class="wrap" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;width:100%">
+      <span data-i18n="copy">© 2026 上海海浦麒碳科技有限公司</span>
+      <span class="links"><a href="contact.html" data-i18n="privacy">隐私政策</a><a href="contact.html" data-i18n="terms">使用条款</a><a class="powered" href="https://hypha.co.nz/" target="_blank" rel="noopener">Powered by Hypha</a></span>
+    </div>
+  </div>
+  <p class="credits wrap" data-i18n="credits">部分图片由 Captura 提供；其余图片来自 Pexels，遵循 Pexels 许可免费使用。</p>
+</footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

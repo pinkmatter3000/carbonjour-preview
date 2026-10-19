@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pinkmatter3000.github.io/carbonjour-website/v2/sitemap.xml
+Sitemap: https://pinkmatter3000.github.io/carbonjour-website/v3/sitemap.xml
